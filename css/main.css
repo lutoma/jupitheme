@@ -1,7 +1,7 @@
 body {
 	background: #fff;
 	color: #2B2926;
-	font-family: 'Open Sans', 'Opensans';
+	font-family: 'Open Sans', 'Opensans', sans-serif, sans;
 	font-size: 14px;
 }
 
@@ -35,7 +35,7 @@ body > [role="slider"] {
 	position: relative;
 	height: 360px;
 	width: 100%;
-	background: url(../img/erfolge.jpg) #4D535F no-repeat center;
+	background: url(http://www.greenpeace.org/austria/Global/austria/fotos/hub/urwaelder_victorymattel.jpg) #4D535F no-repeat center;
 }
 
 body > [role="slider"] > p {
