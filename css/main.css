@@ -49,11 +49,13 @@ body > [role="slider"] > .box {
 	padding: 10px 20px;
 	font-size: 23px;
 	font-weight: lighter;
+	line-height: 1.3;
 }
 
 body > [role="slider"] > .box > h1 {
 	font-size: 23px;
 	margin: 0;
+	margin-bottom: 8px;
 	clear: both;
 	font-weight: bolder;
 	display: inline-block;
