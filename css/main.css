@@ -41,7 +41,7 @@ body > [role="slider"] {
 body > [role="slider"] > .box {
 	position: absolute;
 	bottom: 0px;
-	left: 22px;
+	left: 23px;
 	width: 330px;
 	height: 110px;
 	background: url(../img/pattern.png);
@@ -53,7 +53,7 @@ body > [role="slider"] > .box {
 }
 
 body > [role="slider"] > .box > h1 {
-	font-size: 23px;
+	font-size: 26px;
 	margin: 0;
 	margin-bottom: 8px;
 	clear: both;
