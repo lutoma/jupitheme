@@ -113,10 +113,12 @@ body > [role="slider"] > .box > h1 {
 	color: #fff;
 	margin: 0;
 	margin-bottom: 8px;
+	margin-left: -18px;
+	padding-left: 18px;
 	clear: both;
 	font-weight: bolder;
 	display: inline-block;
-	border-bottom: 1px dotted #fff;
+	border-bottom: 2px dotted #fff;
 }
 
 #wrapper {
