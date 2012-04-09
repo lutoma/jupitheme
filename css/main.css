@@ -38,22 +38,26 @@ body > [role="slider"] {
 	background: url(http://www.greenpeace.org/austria/Global/austria/fotos/hub/urwaelder_victorymattel.jpg) #4D535F no-repeat center;
 }
 
-body > [role="slider"] > p {
+body > [role="slider"] > .box {
 	position: absolute;
 	bottom: 0px;
 	left: 22px;
 	width: 330px;
-	height: 80px;
+	height: 110px;
 	background: url(../img/pattern.png);
 	color: #fff;
-	padding: 20px;
+	padding: 10px 20px;
 	font-size: 23px;
 	font-weight: lighter;
 }
 
-body > [role="slider"] > p > span {
+body > [role="slider"] > .box > h1 {
+	font-size: 23px;
+	margin: 0;
 	clear: both;
 	font-weight: bolder;
+	display: inline-block;
+	border-bottom: 2px dotted #fff;
 }
 
 body > [role="main"] {
