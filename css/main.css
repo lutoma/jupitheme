@@ -20,6 +20,7 @@ header > p {
 }
 
 header > p > #logo {
+	width: 186px;
 	height: 80px;
 	padding-left: 5px;
 	padding-top: 2px;
