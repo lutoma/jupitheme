@@ -35,7 +35,7 @@ body > [role="slider"] {
 	position: relative;
 	height: 360px;
 	width: 100%;
-	background: url(http://www.greenpeace.org/austria/Global/austria/fotos/hub/urwaelder_victorymattel.jpg) #4D535F no-repeat center;
+	background: url(../img/erfolge.jpg) #4D535F no-repeat center;
 }
 
 body > [role="slider"] > .box {
@@ -59,7 +59,7 @@ body > [role="slider"] > .box > h1 {
 	clear: both;
 	font-weight: bolder;
 	display: inline-block;
-	border-bottom: 2px dotted #fff;
+	border-bottom: 1px dotted #fff;
 }
 
 body > [role="main"] {
