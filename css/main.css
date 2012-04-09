@@ -4,7 +4,6 @@ body {
 	font-family: 'Open Sans', 'Opensans', sans-serif, sans;
 	font-size: 14px;
 	line-height: 1.5;
-	width: 1005px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 	background: #fff;
 	display: inline;
 	padding: 10px;
-	right: 20px;
+	left: 740px;
 	top: 14px;
 	box-shadow: 1px -2px 1px #222;
 	transform:rotate(45deg);
@@ -33,6 +32,8 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
 	height: 112px;
+	width:  960px;
+	margin: 0 23px;
 	background: #FFbb00;
 }
 
@@ -43,6 +44,7 @@ header > * {
 
 header > p {
 	height: 85px;
+	padding: 0 10px;
 }
 
 header > p > #logo {
@@ -61,6 +63,7 @@ nav {
 	font-weight: bold;
 	color: #fff;
 	font-size: 13px;
+	box-shadow: 0px 0px 1px #ddd;
 }
 
 nav >  ul > li {
@@ -87,7 +90,7 @@ body > [role="slider"] {
 	width: 100%;
 	background: url(../img/erfolge.jpg), url(http://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags_gray.jpg);
 	background-repeat: no-repeat, repeat;
-	background-position: center;
+	background-position: 23px 0px, center;
 }
 
 body > [role="slider"] > .box {
@@ -122,6 +125,7 @@ body > [role="slider"] > .box > h1 {
 	padding: 10px 0;
 	min-height: 500px;
 	background: #fff;
+	width: 960px;
 }
 
 #wrapper > aside {
@@ -149,4 +153,5 @@ footer > p {
 	background: rgba(0,0,0,0.5);
 	min-height: 180px;
 	padding: 10px 20px;
+	width: 920px;
 }
