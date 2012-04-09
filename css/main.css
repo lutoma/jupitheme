@@ -3,11 +3,19 @@ body {
 	color: #2B2926;
 	font-family: 'Open Sans', 'Opensans', sans-serif, sans;
 	font-size: 14px;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #004E9C;
+	font-weight: lighter;
+	margin-bottom: 0;
+	border-bottom: 1px dotted #bbb;
 }
 
 header {
-	height: 110px;
-	background: #ffcc00;
+	height: 112px;
+	background: #222;
 }
 
 header > * {
@@ -22,14 +30,37 @@ header > p {
 header > p > #logo {
 	width: 186px;
 	height: 80px;
-	padding-left: 5px;
-	padding-top: 2px;
-	padding-right: 30px;
+	margin-left: 20px;
+	margin-top: 2px;
+	margin-right: 30px;
 }
 
 nav {
-	height: 25px;
+	height: 27px;
 	background: #ff8800;
+	padding-left: 30px;
+	padding-top: 4px;
+	font-weight: bold;
+	color: #fff;
+	font-size: 13px;
+}
+
+nav >  ul > li {
+	display: inline;
+	margin-left: 15px;
+	padding: 1px;
+}
+
+nav >  ul > .highlight {
+	background: #fff;
+	color: #2B2926;
+	border-radius: 3px;
+	padding: 1px 5px;
+}
+
+nav > ul > .home {
+	background: url(../img/home_16x16.png) no-repeat center left;
+	padding-left: 21px;
 }
 
 body > [role="slider"] {
@@ -56,6 +87,7 @@ body > [role="slider"] > .box {
 
 body > [role="slider"] > .box > h1 {
 	font-size: 26px;
+	color: #fff;
 	margin: 0;
 	margin-bottom: 8px;
 	clear: both;
