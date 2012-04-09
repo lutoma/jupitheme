@@ -35,7 +35,7 @@ body > [role="slider"] {
 	position: relative;
 	height: 360px;
 	width: 100%;
-	background: url(img/erfolge.jpg) #4D535F no-repeat center;
+	background: url(../img/erfolge.jpg) #4D535F no-repeat center;
 }
 
 body > [role="slider"] > p {
@@ -44,7 +44,7 @@ body > [role="slider"] > p {
 	left: 22px;
 	width: 330px;
 	height: 80px;
-	background: url(img/pattern.png);
+	background: url(../img/pattern.png);
 	color: #fff;
 	padding: 20px;
 	font-size: 23px;
