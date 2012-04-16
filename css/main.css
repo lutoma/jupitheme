@@ -1,5 +1,6 @@
 body {
 	background: url(http://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags.png) #fff;
+	width: 100%;
 	color: #2B2926;
 	font-family: 'Open Sans', 'Opensans', sans-serif, sans;
 	font-size: 14px;
@@ -13,28 +14,24 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom: 1px dotted #bbb;
 }
 
-#logowrapper {
-	position: absolute;
-	z-index: 1000;
-	background: #fff;
-	display: inline;
-	padding: 10px;
-	left: 740px;
-	top: 14px;
-	box-shadow: 1px -2px 1px #222;
-	transform:rotate(45deg);
-	-webkit-transform:rotate(3deg);
-}
-
-#logo {
-	
+#headerwrapper {
+	width: 100%;
+/*	background: #eee;
+	background-image: url(http://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/darkwave.png), url(http://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/boat.png);
+	background-position: -20% bottom, 56% bottom;
+	background-repeat: repeat-x, no-repeat;
+*/
+	background: #6193ae;
+	border-bottom: 6px solid #222;
 }
 
 header {
+	position: relative;
 	height: 112px;
+	height: 200px;
 	width:  960px;
-	margin: 0 23px;
-	background: #FFbb00;
+	margin: 0px auto;
+	color: #fff;
 }
 
 header > * {
@@ -47,23 +44,36 @@ header > p {
 	padding: 0 10px;
 }
 
-header > p > #logo {
-	width: 186px;
-	height: 80px;
-	margin-left: 20px;
-	margin-top: 2px;
-	margin-right: 30px;
+
+#name {
+	font-size: 70px;
+	font-family: 'Open Sans Condensed', 'Open Sans', 'Opensans', sans;
+/*	color: #ff8800;
+	background: #000;
+*/
+
+	padding: 15px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+#signet {
+	position: absolute;
+	z-index: 5;
+	right: 10px;
+	top: 0;
 }
 
 nav {
-	height: 27px;
-	background: #ff8800;
-	padding-left: 30px;
-	padding-top: 4px;
+	height: 23px;
+	background: #333;
 	font-weight: bold;
 	color: #fff;
 	font-size: 13px;
-	box-shadow: 0px 0px 1px #ddd;
+	width: 100%;
+	padding-top: 6px;
+	position: absolute;
+	bottom: 0;
 }
 
 nav >  ul > li {
@@ -88,15 +98,17 @@ body > [role="slider"] {
 	position: relative;
 	height: 360px;
 	width: 100%;
+	width: 960px;
 	background: url(../img/erfolge.jpg), url(http://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags_gray.jpg);
 	background-repeat: no-repeat, repeat;
-	background-position: 23px 0px, center;
+	background-position: center 0px, center;
+	margin: 0px auto;
 }
 
 body > [role="slider"] > .box {
 	position: absolute;
-	bottom: 0px;
-	left: 23px;
+	bottom: 0;
+	left: 0;
 	width: 330px;
 	height: 110px;
 	background: url(../img/pattern.png);
@@ -128,6 +140,7 @@ body > [role="slider"] > .box > h1 {
 	min-height: 500px;
 	background: #fff;
 	width: 960px;
+	margin: 0px auto;
 }
 
 #wrapper > aside {
@@ -156,4 +169,5 @@ footer > p {
 	min-height: 180px;
 	padding: 10px 20px;
 	width: 920px;
+	margin: 0px auto;
 }
