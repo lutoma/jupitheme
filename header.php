@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,700'>
+
 
   <script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr-2.5.3.min.js"></script>
 
