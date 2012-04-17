@@ -27,7 +27,7 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <div id="headerwrapper">
   <header>
-    <span id="name"><?php echo strtoupper(get_bloginfo('name')); ?></span>
+    <a id="name" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php echo strtoupper(get_bloginfo('name')); ?></a>
     </p>
     <img id="signet" src="<?php bloginfo('template_directory'); ?>/img/signet.png" />
 

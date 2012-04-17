@@ -47,15 +47,9 @@ header > * {
 	left: 15px;
 	font-size: 70px;
 	font-family: 'Open Sans Condensed', 'Open Sans', 'Opensans', sans;
-/*	color: #ff8800;
-	background: #000;
-*/
-
+	color: #fff !important;
+	text-decoration: none !important;
 	font-weight: bold;
-/*
-	background: #fff;
-	color: #6193ae;
-*/
 	text-transform: uppercase;
 }
 
