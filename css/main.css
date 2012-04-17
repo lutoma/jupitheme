@@ -239,3 +239,8 @@ input[type=button], input[ŧype=submit], .btn {
 .post {
 	margin-bottom: 50px;
 }
+
+.post-title > a {
+	color: inherit !important;
+	text-decoration: none !important;
+}
