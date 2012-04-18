@@ -15,7 +15,7 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,700'>
-
+  <link rel='icon' type='image/png' href='https://static.junge-piraten.de/favicon.png' />
 
   <script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr-2.5.3.min.js"></script>
 
@@ -34,16 +34,19 @@
     <img id="signet" src="<?php bloginfo('template_directory'); ?>/img/signet.png" />
 
     <nav>
+    <!--
       <ul>
-        <li class="home">Home</li>
-        <li>Wer wir sind</li>
+        <li class="home"><a href="/"><img src="<?php bloginfo('template_directory'); ?>/img/home_16x16.png" alt="Hauptseite" width="16" height="16" /></a></li>
+        <li><a href="/wer-wir-sind">Wer wir sind</a></li>
         <li>Aktiv werden</li>
         <li>Presse</li>
         <li>Wiki</li>
         <li>Forum</li>
         <li class="highlight">Spenden</li>
+
       </ul>
-    </nav>
+    </nav>-->
+    <?php function menu_empty() {}; wp_nav_menu(array('container' => 'nav', 'container_class' => '', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '')); ?>
   </header>
   </div>
   <div role="slider">

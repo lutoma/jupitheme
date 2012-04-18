@@ -25,14 +25,11 @@ a {
 #headerwrapper {
 	width: 100%;
 	background: rgb(69, 181, 196) url(../img/headerpattern.png);
-
 }
 
 header {
 	position: relative;
-	height: 112px;
-	height: 200px;
-	height: 140px;
+	height: 160px;
 	width:  960px;
 	margin: 0px auto;
 	color: #fff;
@@ -65,7 +62,7 @@ header > * {
 }
 
 nav {
-	height: 23px;
+	height: 30px;
 	background: #242424;
 	font-weight: bold;
 	color: #fff;
@@ -81,18 +78,32 @@ nav {
 	border-bottom: 3px solid rgb(255, 136, 0);
 }
 
+nav > ul {
+	margin-top: 3px;
+}
+
 nav >  ul > li {
 	display: inline;
 	margin-left: 15px;
 	padding: 1px;
+	height: 20px;
+}
+
+nav a {
+	border: 0 solid #fff !important;
+	color: #fff !important;
 }
 
 nav >  ul > .highlight {
 }
 
+nav >  ul > .current_page_item > a {
+	color: rgb(255, 136, 0) !important;
+}
+
 nav > ul > .home {
-	background: url(../img/home_16x16.png) no-repeat center left;
-	padding-left: 21px;
+	width: 28px;
+	padding-top: 0;
 }
 
 body > [role="slider"] {
@@ -106,6 +117,13 @@ body > [role="slider"] {
 	background-repeat: no-repeat, repeat;
 	background-position: center 0px, center;
 	margin: 0px auto;
+
+	-moz-box-shadow: 0 3px 8px #666;
+	-webkit-box-shadow: 0 3px 8px #666;
+	-o-box-shadow: 0 3px 8px #666;
+	-ie-box-shadow: 0 3px 8px #666;
+	-khtml-box-shadow: 0 3px 8px #666;
+	box-shadow: 0 3px 8px #666;
 }
 
 body > [role="slider"] > .box {
@@ -149,7 +167,7 @@ body > [role="slider"] > .box > h1 {
 #wrapper {
 	position: relative;
 	margin: 0 23px;
-	padding: 10px 0;
+	padding: 0;
 	min-height: 600px;
 	background: #fff;
 	width: 960px;
@@ -166,14 +184,26 @@ body > [role="slider"] > .box > h1 {
 	float: right;
 	clear: both;
 	width: 30%;
-	padding: 10px;
+	padding: 0 10px;
 	min-height: 500px;
 	height: 100%;
-	border-left: 3px solid #eee;
+	background: url(http://peteramende.de/experimental/wp-content/themes/piraten_2/images/bg-pattern-1.png) repeat -10px -14px;
+}
+
+#wrapper > aside > .box {
+	background: #fff;
+	padding: 10px;
+}
+
+#wrapper > aside h2 {
+	/*color: rgb(255, 136, 0);*/
+	border: 0 solid #fff;
+	margin-bottom: 7px;
+	margin-top: 18px;
 }
 
 #wrapper > div {
-	padding: 0 20px;
+	padding: 10px 20px;
 	width: 60%;
 }
 

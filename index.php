@@ -1,7 +1,14 @@
 <?php get_header(); ?>
   <div id="wrapper">
     <aside>
-      Sidebar Sidebar Sidebar
+      <h2>JuPis auf…</h2>
+      <div class="box">
+        <a href="/feed/"><img src="//www.junge-piraten.de/wp-content/uploads/2010/02/48px-Feed-icon.svg_-e1281671741681.png" style="border-width: 0px;" alt="RSS-/Atom-Feed-Icon" /></a><a href="//twitter.com/jungePiraten"><img src="https://www.junge-piraten.de/wp-content/uploads/2012/02/t_logo-a.png" style="margin-left: 10px; border-width: 0px;" alt="Twitter-Icon" /></a>
+      </div>
+      <h2>Piraten anderswo</h2>
+      <div class="box">
+        Derp herp
+      </div>
     </aside>
 
     <div role="main">
