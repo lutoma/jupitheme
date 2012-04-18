@@ -24,8 +24,8 @@ a {
 
 #headerwrapper {
 	width: 100%;
-	background: rgb(69, 181, 196) url(http://lutoma.org/skins/backgrounds/trans_squares_tn.png);
-	border-bottom: 4px solid #222;
+	background: rgb(69, 181, 196) url(../img/headerpattern.png);
+
 }
 
 header {
@@ -78,6 +78,7 @@ nav {
 	background: #fff;
 	color: #000;
 */
+	border-bottom: 3px solid rgb(255, 136, 0);
 }
 
 nav >  ul > li {
