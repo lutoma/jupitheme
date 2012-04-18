@@ -18,8 +18,15 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
 	text-decoration: none;
-	color: rgb(223, 79, 119) !important;
-	border-bottom: 1px dotted rgb(223, 79, 119);
+	color: rgb(23, 147, 165) !important;
+	border-bottom: 1px dotted rgb(23, 147, 165);
+}
+
+blockquote {
+	padding: 6px;
+	padding-left: 10px;
+	border-left: 4px solid rgb(201, 230, 228);
+	margin: 10px 40px;
 }
 
 #headerwrapper {
@@ -167,7 +174,7 @@ body > [role="slider"] > .box > h1 {
 #wrapper {
 	position: relative;
 	margin: 0 23px;
-	padding: 0;
+	padding: 0px 0;
 	min-height: 600px;
 	background: #fff;
 	width: 960px;
@@ -187,23 +194,23 @@ body > [role="slider"] > .box > h1 {
 	padding: 0 10px;
 	min-height: 500px;
 	height: 100%;
-	background: url(http://peteramende.de/experimental/wp-content/themes/piraten_2/images/bg-pattern-1.png) repeat -10px -14px;
+	border-left: 4px solid rgb(201, 230, 228);
+	margin-top: 30px;
 }
 
 #wrapper > aside > .box {
-	background: #fff;
-	padding: 10px;
+	padding: 0 10px;
+	margin-top: 10px;
 }
 
 #wrapper > aside h2 {
 	/*color: rgb(255, 136, 0);*/
 	border: 0 solid #fff;
 	margin-bottom: 7px;
-	margin-top: 18px;
 }
 
 #wrapper > div {
-	padding: 10px 20px;
+	padding: 5px 20px;
 	width: 60%;
 }
 
