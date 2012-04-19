@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,400,700'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,700'>
   <link rel='icon' type='image/png' href='https://static.junge-piraten.de/favicon.png' />
 
@@ -21,7 +21,7 @@
 
   <?php wp_head(); ?>
 
-  <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf( __( '%s latest posts', 'your-theme' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
+  <link rel="a//lternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf( __( '%s latest posts', 'your-theme' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
   <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'your-theme' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 </head>
@@ -29,7 +29,7 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <div id="headerwrapper">
   <header>
-    <a id="name" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php echo strtoupper(get_bloginfo('name')); ?></a>
+    <a id="name" href="<?php echo site_url("/"); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"><span class="light">Junge</span><br /> PIRATEN</a>
     </p>
     <img id="signet" src="<?php bloginfo('template_directory'); ?>/img/signet.png" />
 

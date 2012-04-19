@@ -29,6 +29,10 @@ blockquote {
 	margin: 10px 40px;
 }
 
+.light {
+	font-weight: lighter !important;
+}
+
 #headerwrapper {
 	width: 100%;
 	background: rgb(69, 181, 196) url(../img/headerpattern.png);
@@ -49,26 +53,36 @@ header > * {
 
 #name {
 	position: absolute;
-	top: 0px;
-	left: 15px;
-	font-size: 70px;
+	top: 8px;
+	font-size: 50px;
+	line-height: 1;
+	left: 200px;
+
 	font-family: 'Open Sans Condensed', 'Open Sans', 'Opensans', sans;
 	color: #fff !important;
 	text-decoration: none !important;
 	border: 0 solid #fff !important;
 	font-weight: bold;
-	text-transform: uppercase;
+}
+
+#name > .light {
+	margin-left: 3px;
+	color: #fff !important;
+	font-weight: light !important;
+	text-transform: upper;
 }
 
 #signet {
 	position: absolute;
 	z-index: 5;
-	right: 30px;
-	top: 5px;
-	height: 180px;
+	left: 10px;
+	top: -25px;
+	height: 200px;
 }
 
 nav {
+	position: relative;
+	z-index: 10;
 	height: 30px;
 	background: #242424;
 	font-weight: bold;
@@ -115,6 +129,7 @@ nav > ul > .home {
 
 body > [role="slider"] {
 	position: relative;
+	z-index: 10;
 	height: 360px;
 	width: 100%;
 	width: 960px;
@@ -139,7 +154,7 @@ body > [role="slider"] > .box {
 	left: 0;
 	width: 330px;
 	height: 110px;
-	background: url(../img/pattern.png);
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQALh4eH/GWF8EGflypWMYAEYB8RmROaABACeBw4JNO4QhQAAAABJRU5ErkJggg==) repeat;
 	color: #fff;
 	padding: 10px 20px;
 	font-size: 25px;
