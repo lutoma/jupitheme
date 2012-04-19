@@ -35,7 +35,13 @@ blockquote {
 
 #headerwrapper {
 	width: 100%;
-	background: rgb(69, 181, 196) url(../img/headerpattern.png);
+	background: rgb(69, 181, 196);
+	/* This is kind of a hack to add a border on the inside of the element.
+	 * The second image is essentially just a 1x3px dot.
+	 */
+	background-image: url(../img/headerpattern.png), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAYAAABP2FU6AAAAEElEQVQIW2NUUlL6z4hKAAAy4AWZ54P7PAAAAABJRU5ErkJggg==);
+	background-position: top left, bottom left;
+	background-repeat: repeat, repeat-x;
 }
 
 header {
@@ -134,7 +140,7 @@ body > [role="slider"] {
 	width: 100%;
 	width: 960px;
 	/*background: url(http://lorempixel.com/960/360/), url(http://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags_gray.jpg);*/
-	background: url(../img/erfolge.jpg), url(http://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags_gray.jpg);
+	background: url(../img/erfolge.jpg), url(https://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags_gray.jpg);
 
 	background-repeat: no-repeat, repeat;
 	background-position: center 0px, center;
@@ -231,7 +237,7 @@ body > [role="slider"] > .box > h1 {
 }
 
 footer {
-	background: url(http://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags_gray.jpg);
+	background: url(https://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags_gray.jpg);
 }
 
 footer > p {
