@@ -309,3 +309,70 @@ input[type=button], input[ŧype=submit], .btn {
 	text-decoration: none !important;
 	border-bottom: 0 solid #fff !important;
 }
+
+/* Responsive foo */
+
+/* Printer optimized view */
+@media print {
+	header, body > [role="slider"], aside, footer, .comment-button {
+		display: none;
+	}
+}
+
+/* Mobile phones */
+@media screen and (max-width: 600px) {
+	aside, .plus, body > [role="slider"] {
+		display: none;
+	}
+
+	#wrapper, header, header > nav, footer, footer > p {
+		width: 100%;
+	}
+
+	body > #wrapper > [role="main"] {
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	nav > ul, nav > ul > li {
+		display: block;
+	}
+
+	nav > ul > li {
+		font-size: 1.3em;
+		height: auto;
+		margin-bottom: 10px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #aaa;
+	}
+
+	header {
+		padding-top: 250px;
+	}
+
+	header, nav {
+		height: auto;
+	}
+
+	body > [role="content"], #wrapper {
+		min-height: 280px;
+	}
+
+	footer, footer > p {
+		height: auto;
+		min-height: 0;
+		padding: 0;	
+	}
+
+	footer {
+		position: relative;
+		width: 100%;
+		padding: 10px 0;
+	}
+
+	footer > p {
+		width: 90%;
+		margin: 0 auto;
+		background: inherit !important;
+	}
+}
