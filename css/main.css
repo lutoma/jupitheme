@@ -188,6 +188,7 @@ body > [role="slider"] > .box > h1 {
 
 #wrapper {
 	position: relative;
+	z-index: 30;
 	margin: 0 23px;
 	padding: 0px 0;
 	min-height: 600px;
