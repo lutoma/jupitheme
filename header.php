@@ -29,7 +29,7 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <div id="headerwrapper">
   <header>
-    <a id="name" href="<?php echo site_url("/"); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"><span class="light">Junge</span><br /> PIRATEN</a>
+    <a id="name" href="<?php echo site_url("/"); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"><span class="light">JUNGE</span> PIRATEN</a>
     <img id="signet" src="<?php bloginfo('template_directory'); ?>/img/signet.png" />
 
     <!--

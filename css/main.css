@@ -1,5 +1,5 @@
 body {
-	background: rgb(23, 147, 165);
+	background: #6193AE;
 	width: 100%;
 	color: #2B2926;
 	font-family: 'Open Sans', 'Opensans', sans-serif, sans;
@@ -8,7 +8,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: rgb(23, 147, 165);
+	color: #2B2926;
 	font-weight: lighter;
 	margin-bottom: 0;
 	border-bottom: 1px dotted #bbb;
@@ -18,8 +18,8 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
 	text-decoration: none;
-	color: rgb(23, 147, 165) !important;
-	border-bottom: 1px dotted rgb(23, 147, 165);
+	color: #Ff8800 !important;
+	border-bottom: 1px dotted #Ff8800;
 }
 
 blockquote {
@@ -35,7 +35,7 @@ blockquote {
 
 #headerwrapper {
 	width: 100%;
-	background: rgb(69, 181, 196);
+	background: #046D8B;
 	/* This is kind of a hack to add a border on the inside of the element.
 	 * The second image is essentially just a 1x3px dot.
 	 */
@@ -59,10 +59,10 @@ header > * {
 
 #name {
 	position: absolute;
-	top: 8px;
-	font-size: 50px;
+	top: 22px;
+	font-size: 70px;
 	line-height: 1;
-	left: 200px;
+	left: 210px;
 
 	font-family: 'Open Sans Condensed', 'Open Sans', 'Opensans', sans;
 	color: #fff !important;
@@ -74,15 +74,15 @@ header > * {
 #name > .light {
 	margin-left: 3px;
 	color: #fff !important;
-	font-weight: light !important;
 	text-transform: upper;
+	font-weight: lighter !important;
 }
 
 #signet {
 	position: absolute;
-	z-index: 5;
+	z-index: 50;
 	left: 10px;
-	top: -25px;
+	top: -10px;
 	height: 200px;
 }
 
@@ -107,6 +107,7 @@ nav {
 
 nav > ul {
 	margin-top: 3px;
+	margin-left: 170px;
 }
 
 nav >  ul > li {
@@ -135,7 +136,7 @@ nav > ul > .home {
 
 #slider {
 	position: relative;
-	z-index: 10;
+	z-index: 1;
 	height: 360px;
 	width: 100%;
 	width: 960px;
@@ -146,12 +147,15 @@ nav > ul > .home {
 	background-position: center 0px, center;
 	margin: 0px auto;
 
-	-moz-box-shadow: 0 3px 8px #666;
-	-webkit-box-shadow: 0 3px 8px #666;
-	-o-box-shadow: 0 3px 8px #666;
-	-ie-box-shadow: 0 3px 8px #666;
-	-khtml-box-shadow: 0 3px 8px #666;
-	box-shadow: 0 3px 8px #666;
+	-moz-box-shadow: 0 -5px 8px #666;
+	-webkit-box-shadow: 0 -5px 8px #666;
+	-o-box-shadow: 0 -5px 8px #666;
+	-ie-box-shadow: 0 -5px 8px #666;
+	-khtml-box-shadow: 0 -5px 8px #666;
+	box-shadow: 0 -5px 8px #666;
+
+	margin-bottom: 25px;
+	border-radius: 2px;
 }
 
 #slider > .box {
@@ -198,26 +202,32 @@ nav > ul > .home {
 	margin: 0 23px;
 	padding: 0px 0;
 	min-height: 600px;
-	background: #fff;
+
 	width: 960px;
 	margin: 0px auto;
-	-moz-box-shadow: 0 0 8px #666;
-	-webkit-box-shadow: 0 0 8px #666;
-	-o-box-shadow: 0 0 8px #666;
-	-ie-box-shadow: 0 0 8px #666;
-	-khtml-box-shadow: 0 0 8px #666;
-	box-shadow: 0 0 8px #666;
+	margin-bottom: 10px;
 }
 
 #wrapper > aside {
 	float: right;
-	clear: both;
-	width: 30%;
-	padding: 0 10px;
+	width: 180px;
 	min-height: 500px;
 	height: 100%;
-	border-left: 4px solid rgb(201, 230, 228);
-	margin-top: 30px;
+	background: #6193AE;
+}
+
+#wrapper > aside > img {
+	float: right;
+	width: 172px;
+	height: auto;
+-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.33);
+-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.33);
+box-shadow: 0 1px 4px rgba(0,0,0,0.33);
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+margin-left: 10px;
+margin-bottom: 20px;
 }
 
 #wrapper > aside > .box {
@@ -231,29 +241,57 @@ nav > ul > .home {
 	margin-bottom: 7px;
 }
 
-#wrapper > div {
-	padding: 5px 20px;
-	width: 60%;
+#wrapper > article {
+	width: 750px;
+	background: #fff;
+	-moz-box-shadow: 0 0 8px #666;
+	-webkit-box-shadow: 0 0 8px #666;
+	-o-box-shadow: 0 0 8px #666;
+	-ie-box-shadow: 0 0 8px #666;
+	-khtml-box-shadow: 0 0 8px #666;
+	box-shadow: 0 0 8px #666;
+	padding: 1px;
+	margin-bottom: 25px;
 }
 
+#wrapper > article .post-title {
+	background: #111;
+	background-image: url(../img/headerpattern.png);
+	background-position: top left;
+	background-repeat: repeat;
+	color: #fff;
+	margin: 0;
+	padding: 10px;
+	font-size: 18px;
+	border-bottom: 0 solid #000;
+	border-top-left-radius: 1px;
+	border-top-right-radius: 1px;
+}
+
+#wrapper > article .content {
+	padding: 4px 10px;
+}
+
+.clear { clear: both; }
+
 footer {
-	background: url(https://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags_gray.jpg);
+	/*background: url(https://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags_gray.jpg);*/
 }
 
 footer > p {
 	margin: 0 23px;
 	color: #fff;
-	background: rgba(0,0,0,0.5);
+	/*background: rgba(0,0,0,0.5);*/
 	min-height: 180px;
 	padding: 10px 20px;
 	width: 922px;
 	margin: 0px auto;
-	-moz-box-shadow: 0 0 8px #222;
+	/*-moz-box-shadow: 0 0 8px #222;
 	-webkit-box-shadow: 0 0 8px #222;
 	-o-box-shadow: 0 0 8px #222;
 	-ie-box-shadow: 0 0 8px #222;
 	-khtml-box-shadow: 0 0 8px #222;
-	box-shadow: 0 0 8px #222;
+	box-shadow: 0 0 8px #222;*/
 }
 
 input[type=button], input[ŧype=submit], .btn {
