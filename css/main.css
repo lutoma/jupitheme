@@ -272,15 +272,20 @@ margin-bottom: 20px;
 	padding: 4px 10px;
 }
 
+#wrapper > article .content > .meta {
+	padding: 8px 2px;
+	border-bottom: 1px dashed #ccc;
+}
+
 .clear { clear: both; }
 
 footer {
 	position: relative;
 	/*background: url(https://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags_gray.jpg);*/
-	background: gray url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAMklEQVQIW2NkgIIVK1b8j4iIYITxQTSYg00CLIlLAq4T2Shka1DsQLcfQxLZGhRJdPsBqI0a/7yQk1wAAAAASUVORK5CYII=) repeat;
+	background: #808080 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAMklEQVQIW2NkgIIVK1b8j4iIYITxQTSYg00CLIlLAq4T2Shka1DsQLcfQxLZGhRJdPsBqI0a/7yQk1wAAAAASUVORK5CYII=) repeat;
 	width: 100%;
 	padding: 0;
-	border-top: 10px solid gray;
+	border-top: 10px solid #808080;
 	padding-top: 30px;
 }
 
