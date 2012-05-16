@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
 	text-decoration: none;
-	color: #Ff8800 !important;
+	color: #Ff8800;
 	border-bottom: 1px dotted #Ff8800;
 }
 
@@ -34,6 +34,8 @@ blockquote {
 }
 
 #headerwrapper {
+	position: relative;
+	z-index: 50;
 	width: 100%;
 	background: #046D8B;
 	/* This is kind of a hack to add a border on the inside of the element.
@@ -81,52 +83,48 @@ header > * {
 #signet {
 	position: absolute;
 	z-index: 50;
-	left: 10px;
-	top: -10px;
+	left: 5px;
+	top: 10px;
 	height: 200px;
 }
 
 nav {
-	position: relative;
+	position: absolute;
+	bottom: 10px;
+	left: 220px;
 	z-index: 10;
-	height: 30px;
-	background: #242424;
 	font-weight: bold;
 	color: #fff;
 	font-size: 13px;
-	width: 100%;
-	padding-top: 6px;
-	position: absolute;
-	bottom: 0;
-/*
-	background: #fff;
-	color: #000;
-*/
-	border-bottom: 3px solid rgb(255, 136, 0);
+	padding-top: px;
 }
 
 nav > ul {
 	margin-top: 3px;
-	margin-left: 170px;
 }
 
 nav >  ul > li {
 	display: inline;
-	margin-left: 15px;
-	padding: 1px;
-	height: 20px;
 }
 
 nav a {
+	display: block;
+	float: left;
 	border: 0 solid #fff !important;
-	color: #fff !important;
+	color: #bfbfbf !important;
+	margin-right: 20px;
+	padding: 0 10px;
+	background: #222;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 1px;
 }
 
 nav >  ul > .highlight {
 }
 
 nav >  ul > .current_page_item > a {
-	color: rgb(255, 136, 0) !important;
+	color: #fff !important;
 }
 
 nav > ul > .home {
@@ -135,18 +133,18 @@ nav > ul > .home {
 }
 
 #slider {
+	float: left;
 	position: relative;
 	z-index: 1;
 	height: 360px;
-	width: 100%;
 	width: 960px;
+	width: 750px;
 	/*background: url(http://lorempixel.com/960/360/), url(http://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags_gray.jpg);*/
 	background: url(../img/erfolge.jpg), url(https://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags_gray.jpg);
 
-	background-repeat: no-repeat, repeat;
+	/*background-repeat: no-repeat, repeat;
 	background-position: center 0px, center;
-	margin: 0px auto;
-
+*/
 	-moz-box-shadow: 0 -5px 8px #666;
 	-webkit-box-shadow: 0 -5px 8px #666;
 	-o-box-shadow: 0 -5px 8px #666;
@@ -155,7 +153,8 @@ nav > ul > .home {
 	box-shadow: 0 -5px 8px #666;
 
 	margin-bottom: 25px;
-	border-radius: 2px;
+	border-bottom-left-radius: 1px;
+	border-bottom-right-radius: 1px;
 }
 
 #slider > .box {
@@ -198,11 +197,9 @@ nav > ul > .home {
 
 #wrapper {
 	position: relative;
-	z-index: 30;
+	z-index: 1;
 	margin: 0 23px;
-	padding: 0px 0;
-	min-height: 600px;
-
+	padding: 0;
 	width: 960px;
 	margin: 0px auto;
 	margin-bottom: 10px;
@@ -210,6 +207,7 @@ nav > ul > .home {
 
 #wrapper > aside {
 	float: right;
+	margin-top: 20px;
 	width: 180px;
 	min-height: 500px;
 	height: 100%;
@@ -243,6 +241,7 @@ margin-bottom: 20px;
 
 #wrapper > article {
 	width: 750px;
+	float: left;
 	background: #fff;
 	-moz-box-shadow: 0 0 8px #666;
 	-webkit-box-shadow: 0 0 8px #666;

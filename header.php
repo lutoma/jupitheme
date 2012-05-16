@@ -38,6 +38,8 @@
     <?php function menu_empty() {}; wp_nav_menu(array('container' => 'nav', 'container_class' => '', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '')); ?>
   </header>
   </div>
+  <div id="wrapper">
+  
   <div id="slider">
     <div class="box">
       <span class="plus">+</span>
