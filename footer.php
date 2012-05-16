@@ -1,6 +1,26 @@
    </div>
   <footer>
-    <p>Junge Piraten e.V.</p>
+  	<div>
+		<div>
+			<h1>Archiv</h1>
+			blah blah
+		</div>
+		<div>
+			<h1>Blogroll</h1>
+			Pirate gaming
+			Piraten SH
+		</div>
+		<div>
+			<h1>Meta</h1>
+			Login
+			RSS
+			Kommentar-RSS
+		</div>
+		<br class="clear" />
+    </div>
+    <div class="copyright">
+    	Der Inhalt auf dieser Seite steht unter einer Herp derp-Lizenz, Version derp | Design von <a href="http://lutoma.org/">Lukas Martini</a> | <a href="/kontakt/">Kontakt</a> | <a href="/impressum/">Impressum</a>.
+    </div>
   </footer>
 
 

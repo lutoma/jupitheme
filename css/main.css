@@ -1,10 +1,11 @@
 body {
-	background: #6193AE;
+	background: #046D8B;
 	width: 100%;
 	color: #2B2926;
 	font-family: 'Open Sans', 'Opensans', sans-serif, sans;
 	font-size: 14px;
 	line-height: 1.5;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,13 +38,14 @@ blockquote {
 	position: relative;
 	z-index: 50;
 	width: 100%;
-	background: #046D8B;
+	background: #1C98BC;
 	/* This is kind of a hack to add a border on the inside of the element.
 	 * The second image is essentially just a 1x3px dot.
 	 */
-	background-image: url(../img/headerpattern.png), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAYAAABP2FU6AAAAEElEQVQIW2NUUlL6z4hKAAAy4AWZ54P7PAAAAABJRU5ErkJggg==);
+	background-image: url(../img/headerpattern.png);
 	background-position: top left, bottom left;
 	background-repeat: repeat, repeat-x;
+	border-bottom: 4px solid #303030;
 }
 
 header {
@@ -211,7 +213,6 @@ nav > ul > .home {
 	width: 180px;
 	min-height: 500px;
 	height: 100%;
-	background: #6193AE;
 }
 
 #wrapper > aside > img {
@@ -274,23 +275,58 @@ margin-bottom: 20px;
 .clear { clear: both; }
 
 footer {
+	position: relative;
 	/*background: url(https://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags_gray.jpg);*/
+	background: gray url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAMklEQVQIW2NkgIIVK1b8j4iIYITxQTSYg00CLIlLAq4T2Shka1DsQLcfQxLZGhRJdPsBqI0a/7yQk1wAAAAASUVORK5CYII=) repeat;
+	width: 100%;
+	padding: 0;
+	border-top: 10px solid gray;
+	padding-top: 30px;
 }
 
-footer > p {
-	margin: 0 23px;
-	color: #fff;
-	/*background: rgba(0,0,0,0.5);*/
+footer > div {
+	width: 960px;
 	min-height: 180px;
 	padding: 10px 20px;
-	width: 922px;
 	margin: 0px auto;
-	/*-moz-box-shadow: 0 0 8px #222;
-	-webkit-box-shadow: 0 0 8px #222;
-	-o-box-shadow: 0 0 8px #222;
-	-ie-box-shadow: 0 0 8px #222;
-	-khtml-box-shadow: 0 0 8px #222;
-	box-shadow: 0 0 8px #222;*/
+}
+
+footer > div > div {
+	position: relative;
+	float: left;
+	width: 230px;
+	height: 250px;
+	padding: 5px 10px;
+	color: #fff;
+	background: gray;
+	margin-left: 50px;
+	/*background: rgba(0,0,0,0.5);*/
+
+}
+
+footer .copyright {
+	background: #404040;
+	width: 100%;
+	color: #bfbfbf;
+	margin-top: 30px;
+	font-size: 1.1em;
+	font-family: 'Open Sans Condensed', inherit;
+	font-weight: lighter;
+	height: 25px;
+	min-height: 25px;
+}
+
+footer .copyright a {
+	color: #B8306B !important;
+	border-bottom: 0 solid #404040;
+}
+
+footer h1 {
+	width: 100%;
+	font-size: 19px;
+	border-bottom: 1px solid #2B2926;
+	margin: 0;
+	margin-bottom: 10px;
 }
 
 input[type=button], input[ŧype=submit], .btn {
