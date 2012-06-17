@@ -35,7 +35,7 @@
     <!--
         <li class="home"><a href="/"><img src="<?php bloginfo('template_directory'); ?>/img/home_16x16.png" alt="Hauptseite" width="16" height="16" /></a></li>
     -->
-    <?php function menu_empty() {}; wp_nav_menu(array('container' => 'nav', 'container_class' => '', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '')); ?>
+    <?php function menu_empty() {}; wp_nav_menu(array('container' => 'nav', 'container_class' => '', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '', 'before' => '<span class="divisor">//</span>')); ?>
   </header>
   </div>
   <div id="wrapper">
@@ -43,7 +43,7 @@
   <div id="slider">
     <div class="box">
       <span class="plus">+</span>
-      <h1><span>WER WIR SIND</span></h1>
-      <div class="text">DIE JUNGEN PIRATEN UND WAS SIE WOLLEN</div>
+      <h1><span>BRÜSSELREISE</span></h1>
+      <div class="text">JUNGE PIRATEN ZU BESUCH IN BRÜSSEL</div>
     </div>
   </div>

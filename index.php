@@ -1,11 +1,11 @@
 <?php get_header(); ?>
     <aside>
+      <?php dynamic_sidebar(); ?> 
       <img src="http://berlin.piratenpartei.de/wp-content/uploads/2012/03/spendenshirt.jpg" />
       <img src="http://berlin.piratenpartei.de/wp-content/uploads/2011/08/mitglied-werden_banner.5.jpg" />
-      <img src="http://berlin.piratenpartei.de/wp-content/uploads/2011/08/banner_grundsatzprogramm.png" />
-      <img src="http://berlin.piratenpartei.de/wp-content/uploads/2011/08/banner_wahlprogramm.png" />
+<!--      <img src="http://berlin.piratenpartei.de/wp-content/uploads/2011/08/banner_grundsatzprogramm.png" />
+      <img src="http://berlin.piratenpartei.de/wp-content/uploads/2011/08/banner_wahlprogramm.png" />-->
       <img src="http://berlin.piratenpartei.de/wp-content/uploads/2011/08/spendenbanner.png" />
-      <?php // dynamic_sidebar(); ?> 
     </aside>
     <?php while (have_posts()) : the_post() ?>
     <article>
