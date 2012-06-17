@@ -8,9 +8,12 @@ body {
 
 }
 
+h2 {
+	font-weight: lighter;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	color: #2B2926;
-	font-weight: lighter;
 	margin-bottom: 0;
 	border-bottom: 1px dotted #bbb;
 	text-transform: uppercase;
