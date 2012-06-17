@@ -212,6 +212,10 @@ nav > ul > .home {
 	font-family: 'Open Sans', 'Opensans', sans;
 }
 
+.attachment-single-post-thumbnail {
+	margin-bottom: 20px;
+}
+
 #wrapper {
 	position: relative;
 	z-index: 1;

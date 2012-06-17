@@ -18,4 +18,7 @@ if (function_exists('register_sidebar'))
 		'before_title' => '<h2>',
 		'after_title' => '</h2>',
 	));
+
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 750, 120, true ); // Normal post thumbnails
 ?>

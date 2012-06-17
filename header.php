@@ -39,7 +39,8 @@
   </header>
   </div>
   <div id="wrapper">
-  
+
+  <?php if(is_home()) { ?>  
   <div id="slider">
     <div class="box">
       <span class="plus">+</span>
@@ -47,3 +48,4 @@
       <div class="text">JUNGE PIRATEN ZU BESUCH IN BRÜSSEL</div>
     </div>
   </div>
+  <?php } ?>
