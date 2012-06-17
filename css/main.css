@@ -385,6 +385,16 @@ input[type=button], input[ŧype=submit], .btn {
 	border-bottom: 0 solid #fff !important;
 }
 
+.alignleft {
+	float: left;
+	margin: 5px;
+}
+
+.alignleft {
+	float: right;
+	margin: 5px;
+}
+
 /* Responsive foo */
 
 /* Printer optimized view */
