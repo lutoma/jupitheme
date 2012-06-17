@@ -320,7 +320,8 @@ footer {
 	width: 100%;
 	background: #111;
 	color: #fff;
-	padding: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	text-align: center;
 	font-size: 0.85em;
 }
