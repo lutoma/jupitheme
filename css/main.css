@@ -88,9 +88,9 @@ header > * {
 #signet {
 	position: absolute;
 	z-index: 50;
-	left: 5px;
-	top: 10px;
-	height: 200px;
+	left: 35px;
+	top: 1px;
+	height: 180px;
 }
 
 nav {
@@ -140,7 +140,7 @@ nav .divisor {
 nav >  ul > .highlight {
 }
 
-nav >  ul > .current_page_item > a {
+nav >  ul > .current_page_item > a, nav > ul > li > a:hover {
 	border-bottom: 1px solid #fff !important;
 }
 
@@ -169,7 +169,6 @@ nav > ul > .home {
 	-khtml-box-shadow: 0 -5px 8px #666;
 	box-shadow: 0 -5px 8px #666;
 
-	margin-bottom: 25px;
 	border-bottom-left-radius: 1px;
 	border-bottom-right-radius: 1px;
 }
@@ -292,7 +291,7 @@ nav > ul > .home {
 	box-shadow: 0 1px 4px rgba(0,0,0,0.33);
 	box-shadow: 0 0 8px #666;
 	padding: 1px;
-	margin-bottom: 25px;
+	margin-top: 25px;
 }
 
 #wrapper > article .post-title {
