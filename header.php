@@ -36,16 +36,24 @@
         <li class="home"><a href="/"><img src="<?php bloginfo('template_directory'); ?>/img/home_16x16.png" alt="Hauptseite" width="16" height="16" /></a></li>
     -->
     <?php function menu_empty() {}; wp_nav_menu(array('container' => 'nav', 'container_class' => '', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '', 'before' => '<span class="divisor">//</span>')); ?>
+    <div id="header-aktiv-werden">
+      <h3 onclick="$('#header-aktiv-werden > ul').fadeToggle();">Direkt mitmachen</h3>
+      <ul style="display: none;">
+        <li><a href="https://forum.junge-piraten.de/">Forum</a></li>
+        <li><a href="https://wiki.junge-piraten.de/">Wiki</a></li>
+        <li><a href="https://pad.junge-piraten.de/">Pads</a></li>
+      </ul>
+    </div>
   </header>
   </div>
   <div id="wrapper">
 
   <?php if(is_home()) { ?>  
-  <div id="slider">
+  <a href="?bxl"><div id="slider">
     <div class="box">
       <span class="plus">+</span>
       <h1><span>BRÜSSELREISE</span></h1>
       <div class="text">JUNGE PIRATEN ZU BESUCH IN BRÜSSEL</div>
     </div>
-  </div>
+  </div></a>
   <?php } ?>

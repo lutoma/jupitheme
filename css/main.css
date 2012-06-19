@@ -2,7 +2,7 @@ body {
 	background: #046D8B;
 	width: 100%;
 	color: #2B2926;
-	font-family: 'Open Sans', 'Opensans', sans-serif, sans;
+	font-family: 'Open Sans', 'Opensans', sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
 
@@ -147,6 +147,50 @@ nav >  ul > .current_page_item > a, nav > ul > li > a:hover {
 nav > ul > .home {
 	width: 28px;
 	padding-top: 0;
+}
+
+#header-aktiv-werden {
+	position: absolute;
+	left: 700px;
+	top: 0;
+	color: #fff;
+}
+
+#header-aktiv-werden > h3 {
+	font-family: 'Open Sans Condensed', inherit;
+	color: #fff;
+	border: none;
+	background: #242424;
+	display: inline;
+	margin: 0;
+	padding: 5px;
+	padding-top: 8px;
+	cursor: pointer;
+}
+
+#header-aktiv-werden ul, #header-aktiv-werden li {
+	display: block;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+#header-aktiv-werden ul {
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+#header-aktiv-werden li {
+	width: 155px;
+	margin-top: 7px;
+	border-bottom: 1px solid #fff;
+	padding-left: 5px;
+}
+
+#header-aktiv-werden ul > li > a {
+	color: #fff;
+	border-bottom: none;
+	font-size: 16px;
 }
 
 #slider {
@@ -396,6 +440,10 @@ input[type=button], input[ŧype=submit], .btn {
 .alignleft {
 	float: right;
 	margin: 5px;
+}
+
+.type-page {
+	min-height: 400px;
 }
 
 /* Responsive foo */
