@@ -12,9 +12,7 @@
   <meta name="viewport" content="width=device-width"> 
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,400,700'>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,700'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300,400,700'>
   <link rel='icon' type='image/png' href='https://static.junge-piraten.de/favicon.png' />
 
   <script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr-2.5.3.min.js"></script>
@@ -52,8 +50,8 @@
   <a href="?bxl"><div id="slider">
     <div class="box">
       <span class="plus">+</span>
-      <h1><span>BRÜSSELREISE</span></h1>
-      <div class="text">JUNGE PIRATEN ZU BESUCH IN BRÜSSEL</div>
+      <h1><span>Brüsselreise</span></h1>
+      <div class="text">Junge Piraten zu Besuch in Brüssel</div>
     </div>
   </div></a>
   <?php } ?>

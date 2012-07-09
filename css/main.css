@@ -17,13 +17,23 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 0;
 	border-bottom: 1px dotted #bbb;
 	text-transform: uppercase;
-	font-family: 'Oswald', inherit !important;
+	font-family: 'Open Sans', inherit !important;
 }
 
-a {
+a, a:hover, a:visited {
 	text-decoration: none;
-	color: #Ff8800;
-	border-bottom: 1px dotted #Ff8800;
+	color: #F88915;
+	border-bottom: 1px dotted #F88915;
+}
+
+a:hover {
+	color: #2B2926;
+	border-bottom: 1px dotted #2B2926;
+}
+
+input[type=text], input[type=password], textarea {
+	border: 1px solid #343434;
+	padding: 2px;
 }
 
 blockquote {
@@ -42,9 +52,6 @@ blockquote {
 	z-index: 50;
 	width: 100%;
 	background: #1C98BC;
-	/* This is kind of a hack to add a border on the inside of the element.
-	 * The second image is essentially just a 1x3px dot.
-	 */
 	background-image: url(../img/headerpattern.png);
 	background-position: top left, bottom left;
 	background-repeat: repeat, repeat-x;
@@ -53,7 +60,7 @@ blockquote {
 
 header {
 	position: relative;
-	height: 160px;
+	height: 185px;
 	width:  960px;
 	margin: 0px auto;
 	color: #fff;
@@ -66,30 +73,48 @@ header > * {
 
 #name {
 	position: absolute;
-	top: 30px;
+	top: 40px;
 	font-size: 74px;
 	line-height: 1;
-	left: 210px;
+	left: 170px;
+	padding: 7px;
+	padding-left: 40px;
+	padding-top: 3px;
+	padding-bottom: 13px;
+	padding-right: 10px;
 
 	font-family: 'Open Sans Condensed', 'Open Sans', 'Opensans', sans;
 	color: #fff !important;
 	text-decoration: none !important;
 	border: 0 solid #fff !important;
 	font-weight: bold;
+
+	background: #ededed !important;
+	background: #E8E0DA !important;
+	color: #F88915 !important;
+
+
+
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.33);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+	text-shadow: 0 -1px 0px #DDA300, 0 1px 1px #f5f5f5;
 }
 
 #name > .light {
-	margin-left: 3px;
-	color: #fff !important;
+	color: #353535 !important;
 	text-transform: upper;
-	font-weight: lighter !important;
+	font-weight: bold !important;
+	margin-right: 0;
+	padding-right: 0;
+	text-shadow: 0 -1px 1px #888, 0 1px 1px #fff;
 }
 
 #signet {
 	position: absolute;
 	z-index: 50;
 	left: 35px;
-	top: 1px;
+	top: 11px;
 	height: 180px;
 }
 
@@ -141,7 +166,7 @@ nav >  ul > .highlight {
 }
 
 nav >  ul > .current_page_item > a, nav > ul > li > a:hover {
-	border-bottom: 1px solid #fff !important;
+	border-bottom: 1px solid #ccc !important;
 }
 
 nav > ul > .home {
@@ -229,6 +254,7 @@ nav > ul > .home {
 	font-size: 25px;
 	text-shadow: 0px 0px 1px #aaa;
 	line-height: 1.3;
+	text-transform: uppercase;
 
 }
 
@@ -277,7 +303,7 @@ nav > ul > .home {
 	height: 100%;
 }
 
-#wrapper > aside > img {
+#wrapper > aside > a > img {
 	float: right;
 	width: 172px;
 	height: auto;
@@ -359,6 +385,8 @@ nav > ul > .home {
 #wrapper > article .content > .meta {
 	padding: 8px 2px;
 	border-bottom: 1px dashed #ccc;
+	color: #555;
+	font-size: 13px;
 }
 
 .clear { clear: both; }
@@ -366,55 +394,56 @@ nav > ul > .home {
 footer {
 	width: 100%;
 	background: #111;
-	color: #fff;
+	color: #ccc;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	text-align: center;
 	font-size: 0.85em;
+	margin-top: 50px;
 }
 
-footer a {
-	color: #fff !important;
-	border-bottom: 1px dotted #fff;
+footer a, footer a:hover, footer a:visited {
+	color: #ccc !important;
+	border-bottom: 1px dotted #ccc;
 }
 
-input[type=button], input[ŧype=submit], .btn {
-  display: inline-block;
-  *display: inline;
-  /* IE7 inline-block hack */
+input[type=button], input[ŧype=submit], #submit, .btn {
+	display: inline-block;
+	*display: inline;
+	/* IE7 inline-block hack */
 
-  *zoom: 1;
-  padding: 4px 10px 4px;
-  margin-bottom: 0;
-  font-size: 13px;
-  line-height: 18px;
-  color: #333333 !important;
-  text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  text-decoration: none;
-  vertical-align: middle;
-  background-color: #f5f5f5;
-  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: linear-gradient(top, #ffffff, #e6e6e6);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
-  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
-  border: 1px solid #cccccc;
-  border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
-  *margin-left: .3em;
+	*zoom: 1;
+	padding: 4px 10px 4px;
+	margin-bottom: 0;
+	font-size: 13px;
+	line-height: 18px;
+	color: #333333 !important;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	text-decoration: none;
+	vertical-align: middle;
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(top, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+	border: 1px solid #cccccc !important;
+	border-bottom-color: #b3b3b3 !important;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+	*margin-left: .3em;
 }
 
 /* Wordpress specific foo */
@@ -444,6 +473,23 @@ input[type=button], input[ŧype=submit], .btn {
 
 .type-page {
 	min-height: 400px;
+}
+
+.commentmetadata {
+	font-size: 10px;
+	padding-top: 3px;
+}
+
+.comment {
+	padding: 10px 8px;
+}
+
+.odd {
+	background: #f8f8f8;
+}
+
+#commentform label {
+	margin-left: 5px;
 }
 
 /* Responsive foo */

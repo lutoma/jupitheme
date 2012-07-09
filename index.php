@@ -1,11 +1,10 @@
 <?php get_header(); ?>
     <aside>
       <?php dynamic_sidebar(); ?> 
-      <img src="http://berlin.piratenpartei.de/wp-content/uploads/2012/03/spendenshirt.jpg" />
-      <img src="http://berlin.piratenpartei.de/wp-content/uploads/2011/08/mitglied-werden_banner.5.jpg" />
+      <a href="https://anmelden.junge-piraten.de/"><img src="<?php bloginfo('template_directory'); ?>/img/mitgliedwerden-banner.png" /></a>
 <!--      <img src="http://berlin.piratenpartei.de/wp-content/uploads/2011/08/banner_grundsatzprogramm.png" />
       <img src="http://berlin.piratenpartei.de/wp-content/uploads/2011/08/banner_wahlprogramm.png" />-->
-      <img src="http://berlin.piratenpartei.de/wp-content/uploads/2011/08/spendenbanner.png" />
+      <a href="/die-jungen-piraten/bankverbindung/"><img src="<?php bloginfo('template_directory'); ?>/img/spenden-banner.png" /></a>
     </aside>
     <?php while (have_posts()) : the_post() ?>
     <article>
@@ -20,7 +19,8 @@
           <?php endif; ?>
           <?php the_content(); ?>
         
-          <?php if(!is_single() && !is_page()) comments_popup_link(__('Leave a comment', 'your-theme'), __('1 Comment', 'your-theme'), _('% Comments', 'your-theme'), 'comment-button btn'); ?>
+          <?php if(!is_single() && !is_page()) comments_popup_link(__('Leave a comment', 'jupisnova'), __('1 Comment', 'jupisnova'), _('% Comments', 'jupisnova'), 'comment-button btn'); ?>
+          <?php if(is_single() && !is_page()) { comments_template(); } ?>
         </div>
       </div>
     </article>

@@ -1,6 +1,6 @@
    </div>
   <footer>
-	Der Inhalt auf dieser Seite steht unter einer Herp derp-Lizenz, Version derp | Design von <a href="http://lutoma.org/">Lukas Martini</a> | <a href="/kontakt/">Kontakt</a> | <a href="/impressum/">Impressum</a>.
+	Die Inhalte auf dieser Seite stehen unter einer <a href="http://creativecommons.org/licenses/by-sa/3.0/de/">Creative Comons BY-SA-Lizenz, Version 3.0</a> | Design von <a href="https://lutoma.org/">Lukas Martini</a> | <a href="/impressum/datenschutzerklaerung/">Datenschutzerklärung</a> | <a href="/impressum/">Impressum</a>
   </footer>
 
 
