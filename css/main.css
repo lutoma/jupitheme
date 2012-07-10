@@ -389,6 +389,15 @@ nav > ul > .home {
 	font-size: 13px;
 }
 
+#wrapper > article .content > .meta a {
+	border-bottom: none;
+	color: #555;
+}
+
+#wrapper > article .content > .meta a:hover {
+	color: #F88915;
+}
+
 .clear { clear: both; }
 
 footer {
