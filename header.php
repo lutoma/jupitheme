@@ -1,5 +1,43 @@
 <!doctype html>
 <html lang="de">
+<!--
+
+.       _,..wWWw--./+'.            _      ,.                          .
+  ..wwWWWWWWWWW;ooo;++++.        .ll'  ,.++;
+   `'"">wW;oOOOOOO;:++\++.      .lll .l"+++'   ,..
+     ,wwOOOOOOOO,,,++++\+++.    lll',ll'++;  ,++;'
+    ,oOOOOOOOO,,,,+++++`'++ll. ;lll ll:+++' ;+++'
+   ;OOOOOOOOO,,,'++++++++++lll ;lll ll:++:'.+++'
+   OOOO;OOO",,"/;++++,+,++++ll`:llllll++++'+++
+  OOOO;OO",,'++'+++;###;"-++llX llll`;+++++++'  ,.    .,      _
+;O;'oOOO ,'+++\,-:  ###++++llX :l.;;;,--++."-+++++ w":---wWWWWWww-._
+;'  /O'"'"++++++' :;";#'+++lllXX,llll;++.+++++++++W,"WWWWWWWWww;""""'`
+   ."     `"+++++'.'"''`;'ll;xXXwllll++;--.++++;wWW;xXXXXXXXXXx"Ww.
+           .+++++++++++';xXXXXX;Wll"+-"++,'---"-.x""`"lllllllxXXxWWw.
+           "---'++++++-;XXXXXXwWWl"++++,"---++++",,,,,,,,,,;lllXXXxWW,
+             `'""""',+xXXXXX;wWW'+++++++++;;;";;;;;;;;oOo,,,,,llXXX;WW`
+                   ,+xXXXXXwWW"++.++++-.;;+++<'   `"WWWww;Oo,,,llXXX"Ww
+                   +xXXX"wwW"+++++'"--'"'  )+++     `WWW"WwOO,,lllXXXww
+                  ,x++++;"+++++++++++`., )  )+++     )W; ,WOO,,lllX:"Ww
+                  :++++++++++++++++++++W'"-:++++    .W'  WWOO,,lllX; `w
+                  .++++++++++++++++.+++"ww :+++'   ,"   ,WWOO,,lllX;  ;
+           ;ll--.-"`.;++++++++++++++.+++;+.;++(         :WWOO,,lllXx
+          ,'lllllllll,++++;+++++++++;"++++++++++++-.    :WWOO,,lllXx
+          ;llll;;;"';'++++;'"""'''`` `lll;;:+++++++++.  WWOOO,,lllX'
+         ,lllll,    ;+++++;            `"lllll.++++++++ WWwO,,,llX;
+         lllllll,  ,++++++;               llllll+++++++.:WWw',,llx
+        ,llllllll, ;++++++;               :llllll+++++++."WW;,,llx
+        ;lllllllllV+++++++;               :lllllll+++++++.`w' `.lx.
+        `lllllllll'+++++++;               :lllllll++++++++  `\  `,X\
+         "llllll;++++++++;                ;llllll'+++++++++   `-  \X;
+          "llll'+++++++++;               ;lllllll"+++++++++        `)
+           `-'`+++++++++;'              ,llllllll++++++++++
+             +++++++++++;              ,llllllll'++++++++++
+.           '++++++++++"               `""""""""'+++++++++"           .
+Tadness                                   http://tadness.deviantart.com
+
+-->
+
 <head>
   <meta charset="utf-8">
   <!--[if ie]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
@@ -25,6 +63,7 @@
   <div id="topbar">
     <a href="https://wiki.junge-piraten.de/">Wiki</a>
     <a href="https://forum.junge-piraten.de/">Forum</a>
+    <a href="https://ucp.junge-piraten.de/">UCP</a>
   </div>
   <div id="headerwrapper">
   <header>
@@ -36,6 +75,12 @@
     -->
     <?php function menu_empty() {}; wp_nav_menu(array('container' => 'nav', 'container_class' => '', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '', 'before' => '<span class="divisor">//</span>')); ?>
     <div id="header-right">
+      <div id="social">
+        <a href="https://twitter.com/#!/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/icons/twitter-bird-dark-bgs.png" alt="Twitter" title="Twitter" /></a>
+        <a href="https://facebook.com/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/icons/facebook.png" alt="Facebook" title="Facebook" /></a>
+        <a href="http://flickr.com/photos/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/icons/flickr.png" alt="Flickr" title="Flickr" /></a>
+        <a href="https://youtube.com/user/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/icons/youtube.png" alt="Youtube" title="Youtube" /></a>
+      </div>
       <form href="<?php echo site_url("/"); ?>" method="get" id="search-form" />
           <input type="text" placeholder="Suchbegriff" name="s" />
           <input class="submit" type="submit" value=" " />
@@ -46,11 +91,11 @@
   <div id="wrapper">
 
   <?php if(is_home()) { ?>  
-  <a href="?bxl"><div id="slider">
+  <a href="?bxl" id="slider-link"><div id="slider">
     <div class="box">
       <span class="plus">+</span>
       <h1><span>Brüsselreise</span></h1>
       <div class="text">Junge Piraten zu Besuch in Brüssel</div>
     </div>
   </div></a>
-  <?php } ?>
+  <?php } ?><!--<a id="mitglied-werden" href="https://anmelden.junge-piraten.de/">&nbsp;</a>-->
