@@ -1,11 +1,11 @@
 body {
 	background: #046D8B;
 	width: 100%;
-	color: #2B2926;
+	color: #242424;
 	font-family: 'Open Sans', 'Opensans', sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
-
+	margin-top: 8px;
 }
 
 h2 {
@@ -32,8 +32,16 @@ a:hover {
 }
 
 input[type=text], input[type=password], textarea {
-	border: 1px solid #343434;
+	border: 1px solid #cecece;
 	padding: 2px;
+}
+
+input[type=button], input[type=submit], button, .btn, .btn:hover {
+	background-color: #cecece;
+	color: #242424 !important;
+	padding: 3px 5px;
+	border: none !important;
+	cursor: pointer;
 }
 
 blockquote {
@@ -47,23 +55,39 @@ blockquote {
 	font-weight: lighter !important;
 }
 
+#topbar {
+	width:  960px;
+	margin: 0px auto;
+	height: 24px;
+	display: none;
+}
+
+#topbar a {
+	color: #fff;
+	border-bottom: none !important;
+}
+
 #headerwrapper {
 	position: relative;
 	z-index: 50;
 	width: 100%;
-	background: #1C98BC;
-	background-image: url(../img/headerpattern.png);
-	background-position: top left, bottom left;
-	background-repeat: repeat, repeat-x;
-	border-bottom: 4px solid #ee6600;
+	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQALh4eH/GWF8EGflypWMYAEYB8RmROaABACeBw4JNO4QhQAAAABJRU5ErkJggg==) repeat;*/
+	background-color: #035C75;
 }
 
 header {
 	position: relative;
-	height: 185px;
+	height: 150px;
 	width:  960px;
 	margin: 0px auto;
 	color: #fff;
+	background: ;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQIW2NkQAPy8vKSjMhiIIGHDx8+hwvCBECKwILIAmBBdAGQIACxChB8RLDalgAAAABJRU5ErkJggg==) repeat;
+	background-color: #F78605;
+	background-position: top left, bottom left;
+	background-repeat: repeat, repeat-x;
+	border-bottom: 4px solid #242424;
+	border-left: 1px solid #bbb;
 }
 
 header > * {
@@ -71,57 +95,81 @@ header > * {
 	padding: 0;
 }
 
-#name {
+#header-right {
 	position: absolute;
-	top: 40px;
-	font-size: 74px;
-	line-height: 1;
-	left: 170px;
-	padding: 7px;
-	padding-left: 40px;
-	padding-top: 3px;
-	padding-bottom: 13px;
-	padding-right: 10px;
+	left: 629px;
+	top: 0px;
+	z-index: 0;
 
-	font-family: 'Open Sans Condensed', 'Open Sans', 'Opensans', sans;
-	color: #fff !important;
-	text-decoration: none !important;
-	border: 0 solid #fff !important;
-	font-weight: bold;
-
-	background: #ededed !important;
-	background: #E8E0DA !important;
-	color: #F88915 !important;
-
-
-
-	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
-	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.33);
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
-	text-shadow: 0 -1px 0px #DDA300, 0 1px 1px #f5f5f5;
+	background: transparent;
+	background-image: url(../img/header_ob_border.png);
+	background-repeat: no-repeat;
+	height: 149px;
+	width: 231px;
+	padding-left: 100px;
+	border-bottom: 1px solid #141414;
 }
 
-#name > .light {
-	color: #353535 !important;
-	text-transform: upper;
-	font-weight: bold !important;
+#search-form {
+	position: absolute;
+	top: 61px;
+	left: 84px;
+}
+
+#search-form input {
+	display: block;
+	float: left;
+	border: none;
+	height: 19px;
+	padding: 4px !important;
+	margin: 0;
+}
+
+#search-form .submit {
+	background: #2D7DC5 url("http://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/lupe.png") no-repeat;
+	background-position: 7px 7px;
+	padding: 0px;
+	padding-left: 7px;
+	height: 27px !important;
+	width: 27px !important;
+}
+
+#name {
+	position: absolute;
+	top: 15px;
+	font-size: 74px;
+	line-height: 1;
+	left: 190px;
+
+	padding: 7px;
+
+	font-family: 'Open Sans Condensed', 'Open Sans', 'Opensans', sans;
+	text-decoration: none !important;
+	border: none !important;
+	text-transform: uppercase;
+	font-weight: lighter !important;
 	margin-right: 0;
 	padding-right: 0;
-	text-shadow: 0 -1px 1px #888, 0 1px 1px #fff;
+	color: #fff !important;
+	text-shadow: -1px 0 #F8850C, 0 1px #F8850C, 1px 0 #F8850C, 0 -1px #F8850C;
+}
+
+#name > .bold {
+	font-weight: bold;
 }
 
 #signet {
 	position: absolute;
 	z-index: 50;
-	left: 35px;
-	top: 11px;
-	height: 180px;
+	left: 5px;
+	top: -3px;
+	height: 190px;
 }
 
 nav {
 	background: #242424;
 	position: absolute;
-	left: 230px;
+	left: 200px;
 	bottom: 0;
 	z-index: 10;
 	font-weight: bold;
@@ -172,50 +220,6 @@ nav >  ul > .current_page_item > a, nav > ul > li > a:hover {
 nav > ul > .home {
 	width: 28px;
 	padding-top: 0;
-}
-
-#header-aktiv-werden {
-	position: absolute;
-	left: 700px;
-	top: 0;
-	color: #fff;
-}
-
-#header-aktiv-werden > h3 {
-	font-family: 'Open Sans Condensed', inherit;
-	color: #fff;
-	border: none;
-	background: #242424;
-	display: inline;
-	margin: 0;
-	padding: 5px;
-	padding-top: 8px;
-	cursor: pointer;
-}
-
-#header-aktiv-werden ul, #header-aktiv-werden li {
-	display: block;
-	margin: 0;
-	padding: 0;
-	color: #fff;
-}
-
-#header-aktiv-werden ul {
-	margin-top: 5px;
-	margin-left: 10px;
-}
-
-#header-aktiv-werden li {
-	width: 155px;
-	margin-top: 7px;
-	border-bottom: 1px solid #fff;
-	padding-left: 5px;
-}
-
-#header-aktiv-werden ul > li > a {
-	color: #fff;
-	border-bottom: none;
-	font-size: 16px;
 }
 
 #slider {
@@ -301,6 +305,7 @@ nav > ul > .home {
 	width: 180px;
 	min-height: 500px;
 	height: 100%;
+	margin-right: 3px;
 }
 
 #wrapper > aside > a > img {
@@ -322,7 +327,7 @@ nav > ul > .home {
 	width: 150px;
 	padding: 0 10px;
 	margin-bottom: 20px;
-	background: #ededed;
+	background: #fff;
 	padding: 5px 10px;
 
 	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.33);
@@ -402,7 +407,7 @@ nav > ul > .home {
 
 footer {
 	width: 100%;
-	background: #111;
+	background: #181619;
 	color: #ccc;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -416,43 +421,20 @@ footer a, footer a:hover, footer a:visited {
 	border-bottom: 1px dotted #ccc;
 }
 
-input[type=button], input[ŧype=submit], #submit, .btn {
-	display: inline-block;
-	*display: inline;
-	/* IE7 inline-block hack */
+/* Chromeframe */
+.chromeframe {
+	background: #181818;
+	color: #fff;
+	margin: 0;
+	padding: 0.2em 0;
+	padding-left: 10px;
+	border-bottom: 2px solid #ccc;
+	margin-bottom: 5px;
+}
 
-	*zoom: 1;
-	padding: 4px 10px 4px;
-	margin-bottom: 0;
-	font-size: 13px;
-	line-height: 18px;
-	color: #333333 !important;
-	text-align: center;
-	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-	text-decoration: none;
-	vertical-align: middle;
-	background-color: #f5f5f5;
-	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
-	background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
-	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
-	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
-	background-image: linear-gradient(top, #ffffff, #e6e6e6);
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
-	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-	filter: progid:dximagetransform.microsoft.gradient(enabled=false);
-	border: 1px solid #cccccc !important;
-	border-bottom-color: #b3b3b3 !important;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-	cursor: pointer;
-	*margin-left: .3em;
+.chromeframe a {
+	color: #fff !important;
+	border-bottom: 1px dotted #fff !important;
 }
 
 /* Wordpress specific foo */
@@ -493,8 +475,8 @@ input[type=button], input[ŧype=submit], #submit, .btn {
 	padding: 10px 8px;
 }
 
-.odd {
-	background: #f8f8f8;
+.even {
+	background: #ededed;
 }
 
 #commentform label {
@@ -505,24 +487,79 @@ input[type=button], input[ŧype=submit], #submit, .btn {
 
 /* Printer optimized view */
 @media print {
-	header, #slider, aside, footer, .comment-button {
+	header, #slider, aside, footer, .comment-button, #topbar {
 		display: none;
 	}
 }
 
 /* Mobile phones */
 @media screen and (max-width: 600px) {
-	aside, .plus, #slider {
+	aside, .plus, #slider, #topbar, .divisor, #signet, #header-right {
 		display: none;
 	}
 
-	#wrapper, header, header > nav, footer, footer > p {
+	#wrapper, header, header > nav, footer, footer > p, .box, article {
 		width: 100%;
 	}
 
-	body > #wrapper > [role="main"] {
-		width: 85%;
-		margin: 0 auto;
+	header {
+		height: 240px !important;
+		min-height: 0;
+		display: block;
+	}
+
+	nav {
+		height: auto;
+	}
+
+	#headerwrapper {
+		height: auto;
+	}
+
+	#name {
+		position: absolute;
+		left: 0;
+		width: 90%;
+		text-align: center;
+		overflow: hidden;
+		font-size: 60px !important;
+		padding: 0;
+		color: #fff !important;
+	}
+
+	#name .bold {
+		background: none;
+		text-shadow: none;
+	}
+
+	#wrapper {
+		margin-top: 15px;
+	}
+
+	body > #wrapper > article {
+		width: 100%;
+		padding: 0;
+		paddin-bottom: 20px;
+		margin: 0;
+		box-shadow: none;
+		overflow: hidden;
+		padding-top: 1px;
+	}
+
+	.wp-post-image {
+		width: 100%;
+		height: auto;
+	}
+
+	nav {
+		left: 0;
+		padding: 0;
+	}
+
+	nav > ul {
+		margin: 0;
+		padding: 0;
+		padding-top: 5px;
 	}
 
 	nav > ul, nav > ul > li {
@@ -531,18 +568,23 @@ input[type=button], input[ŧype=submit], #submit, .btn {
 
 	nav > ul > li {
 		font-size: 1.3em;
-		height: auto;
+		height: 10px;
 		margin-bottom: 10px;
-		padding-bottom: 5px;
-		border-bottom: 1px solid #aaa;
-	}
-
-	header {
-		padding-top: 250px;
-	}
-
-	header, nav {
+		text-align: left;
+		margin-left: 10px;
+		border-bottom: 1px solid #fff;
 		height: auto;
+	}
+
+	nav > ul > li > a {
+		border-bottom: none;
+		float: none;
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
+
+	nav >  ul > .current_page_item > a, nav > ul > li > a:hover {
+		border-bottom: none !important;
 	}
 
 	body > [role="content"], #wrapper {
@@ -552,31 +594,18 @@ input[type=button], input[ŧype=submit], #submit, .btn {
 	footer, footer > p {
 		height: auto;
 		min-height: 0;
-		padding: 0;	
+		padding: 0;
+		margin: 0;
 	}
 
 	footer {
 		position: relative;
 		width: 100%;
-		padding: 10px 0;
 	}
 
 	footer > p {
-		width: 90%;
+		width: 80%;
 		margin: 0 auto;
 		background: inherit !important;
-	}
-}
-
-/* iPhone */
-@media screen and (max-width: 320px) {
-	#signet {
-		width: 100px;
-		height: auto;
-		top: 2px;
-	}
-
-	#name {
-		left: 120px;
 	}
 }
