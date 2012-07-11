@@ -6,13 +6,13 @@
   <title><?php wp_title('&laquo;', true, 'right'); bloginfo('name'); ?></title>
   <meta name="description" content="Die Jungen Piraten sind die Jugendorganisation der Piratenpartei und setzen sich für die Belange Jugendlicher in der Politik ein.">
 
+  <?php wp_head(); ?>
+
   <meta name="viewport" content="width=device-width"> 
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300,400,700'>
   <link rel='icon' type='image/png' href='https://static.junge-piraten.de/favicon.png' />
-
-  <?php wp_head(); ?>
 
   <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf( __( '%s latest posts', 'your-theme' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
   <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'your-theme' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
