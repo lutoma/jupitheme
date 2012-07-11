@@ -489,7 +489,7 @@ footer a, footer a:hover, footer a:visited {
 }
 
 .alignleft {
-	float: rleft;
+	float: left;
 	margin: 10px 20px;
 	margin-left: 0;
 }
