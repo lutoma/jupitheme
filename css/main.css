@@ -122,13 +122,8 @@ header > * {
 	margin-left: 3px;
 }
 
-#social a:hover {
-	margin-right: -3px;
-	margin-left: 6px;
-}
-
 #social img {
-	background-image: url(../img/icons/social-share.png);
+	background-image: url(../img/icons/social-sprite.png);
 	background-position-y: 0px;
 	height: 24px;
 	width: 24px;
