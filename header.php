@@ -76,10 +76,10 @@ Tadness                                   http://tadness.deviantart.com
     <?php function menu_empty() {}; wp_nav_menu(array('container' => 'nav', 'container_class' => '', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '', 'before' => '<span class="divisor">//</span>')); ?>
     <div id="header-right">
       <div id="social">
-        <a href="https://twitter.com/#!/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/icons/twitter-bird-dark-bgs.png" alt="Twitter" title="Twitter" /></a>
-        <a href="https://facebook.com/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/icons/facebook.png" alt="Facebook" title="Facebook" /></a>
-        <a href="http://flickr.com/photos/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/icons/flickr.png" alt="Flickr" title="Flickr" /></a>
-        <a href="https://youtube.com/user/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/icons/youtube.png" alt="Youtube" title="Youtube" /></a>
+        <a class="twitter" href="https://twitter.com/#!/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Twitter" title="Twitter" /></a>
+        <a class="facebook" href="https://facebook.com/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Facebook" title="Facebook" /></a>
+        <a class="flickr" href="http://flickr.com/photos/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Flickr" title="Flickr" /></a>
+        <a class="youtube" href="https://youtube.com/user/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Youtube" title="Youtube" /></a>
       </div>
       <form href="<?php echo site_url("/"); ?>" method="get" id="search-form" />
           <input type="text" placeholder="Suchbegriff" name="s" />
