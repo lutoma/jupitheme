@@ -488,6 +488,31 @@ footer a, footer a:hover, footer a:visited {
 	margin-left: 0;
 }
 
+.alignleft {
+	float: rleft;
+	margin: 10px 20px;
+	margin-left: 0;
+}
+
+.alignright {
+	float: right;
+	margin: 10px 20px;
+	margin-right: 0;
+}
+
+.wp-caption {
+	padding: 5px;
+	width: auto;
+	border: 1px solid #ededed;
+}
+
+.wp-caption-text {
+	margin: 0;
+	margin-top: 5px;
+	padding: 0;
+	font-size: 13px;
+}
+
 /* Responsive foo */
 
 /* Printer optimized view */
