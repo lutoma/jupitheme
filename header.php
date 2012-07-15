@@ -91,7 +91,7 @@ Tadness                                   http://tadness.deviantart.com
   <div id="wrapper">
 
   <?php if(is_home()) { ?>  
-  <a href="?bxl" id="slider-link"><div id="slider">
+  <a href="/2012/06/30/junge-piraten-beteiligen-sich-an-der-aktion-schlussel-nach-brussel/" id="slider-link"><div id="slider">
     <div class="box">
       <span class="plus">+</span>
       <h1><span>Brüsselreise</span></h1>
