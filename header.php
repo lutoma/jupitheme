@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="de">
+<head>
+  <meta charset="utf-8">
 <!--
 
 .       _,..wWWw--./+'.            _      ,.                          .
@@ -37,9 +39,6 @@
 Tadness                                   http://tadness.deviantart.com
 
 -->
-
-<head>
-  <meta charset="utf-8">
   <!--[if ie]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
   <title><?php wp_title('&laquo;', true, 'right'); bloginfo('name'); ?></title>
   <meta name="description" content="Die Jungen Piraten sind die Jugendorganisation der Piratenpartei und setzen sich für die Belange Jugendlicher in der Politik ein.">
@@ -81,7 +80,7 @@ Tadness                                   http://tadness.deviantart.com
         <a class="flickr" href="http://flickr.com/photos/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Flickr" title="Flickr" /></a>
         <a class="youtube" href="https://youtube.com/user/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Youtube" title="Youtube" /></a>
       </div>
-      <form href="<?php echo site_url("/"); ?>" method="get" id="search-form" />
+      <form action="<?php echo site_url("/"); ?>" method="get" id="search-form">
           <input type="text" placeholder="Suchbegriff" name="s" />
           <input class="submit" type="submit" value=" " />
       </form>
