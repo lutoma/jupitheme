@@ -22,7 +22,6 @@ h1, h2, h3, h4, h5, h6 {
 a, a:hover, a:visited {
 	text-decoration: none;
 	color: #DE2355;
-	border-bottom: 1px dotted #DE2355;
 }
 
 a:hover {
@@ -36,7 +35,7 @@ input[type=text], input[type=password], textarea {
 }
 
 input[type=button], input[type=submit], button, .btn, .btn:hover {
-	background-color: #cecece;
+	border: 1px solid #ededed !important;
 	color: #242424 !important;
 	padding: 3px 5px;
 	border: none !important;
@@ -227,13 +226,15 @@ nav {
 	color: #fff;
 	font-size: 15px;
 	padding-top: 3px;
-	padding-bottom: 5px;
+	padding-bottom: 0;
 	padding-right: 10px;
-	padding-left: 0;
+	padding-left: 15px;
 }
 
 nav >  ul > li {
+	position: relative;
 	display: inline-block;
+	display: inline-table; /* Le dirty hack. */
 }
 
 nav a {
@@ -250,7 +251,7 @@ nav li:first-child {
 }
 
 nav li:first-child > .divisor {
-	visibility: hidden;
+	display: none;
 }
 
 nav .divisor {
@@ -271,6 +272,18 @@ nav >  ul > .current_page_item > a, nav > ul > li > a:hover {
 nav > ul > .home {
 	width: 28px;
 	padding-top: 0;
+}
+
+.sub-menu {
+	display: none;
+	position: relative;
+	top: 32px;
+	left: 32px;
+	height: 30px;
+	background: #242424;
+	border: #dedede;
+	padding-left: 10px;
+	width: 500px;
 }
 
 #slider {
@@ -438,7 +451,7 @@ nav > ul > .home {
 	box-shadow: 0 1px 4px rgba(0,0,0,0.33);
 	box-shadow: 0 0 8px #666;
 	padding: 1px;
-	margin-top: 25px;
+	margin-top: 20px;
 }
 
 #wrapper > article .post-title {
@@ -486,7 +499,6 @@ footer {
 	text-align: center;
 	font-size: 0.85em;
 	margin-top: 50px;
-	border-top: 1px solid #DE2355;
 }
 
 footer a, footer a:hover, footer a:visited {
