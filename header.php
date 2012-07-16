@@ -73,6 +73,10 @@ Tadness                                   http://tadness.deviantart.com
         <li class="home"><a href="/"><img src="<?php bloginfo('template_directory'); ?>/img/home_16x16.png" alt="Hauptseite" width="16" height="16" /></a></li>
     -->
     <?php function menu_empty() {}; wp_nav_menu(array('container' => 'nav', 'container_class' => '', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '', 'before' => '<span class="divisor">//</span>')); ?>
+    <div id="header-right-skew">
+     <div id="header-right-skew-background">
+     </div>
+    </div>
     <div id="header-right">
       <div id="social">
         <a class="twitter" href="https://twitter.com/#!/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Twitter" title="Twitter" /></a>
