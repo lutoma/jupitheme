@@ -75,15 +75,7 @@ blockquote {
 }
 /* stripes */
 header, #header-right-skew-background {
-	background-image:  linear-gradient(left top, transparent 49%, #b57121 1%, transparent 50%);
-	background-image:  -webkit-linear-gradient(left top, transparent 49%, #b57121 1%, transparent 50%);
-	background-image:  -moz-linear-gradient(left top, transparent 49%, #b57121 1%, transparent 50%);
-	background-image:  -o-linear-gradient(left top, transparent 49%, #b57121 1%, transparent 50%);
-	background-size:         4px 4px;
-	-webkit-background-size: 4px 4px;
-	-moz-background-size:    4px 4px;
-	-o-background-size:      4px 4px;
-	background-repeat:       repeat;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQIW2NkQAPy8vKSjMhiIIGHDx8+hwvCBECKwILIAmBBdAGQIACxChB8RLDalgAAAABJRU5ErkJggg==) repeat;
 }
 
 header {
