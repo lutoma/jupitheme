@@ -48,6 +48,7 @@ Tadness                                   http://tadness.deviantart.com
   <meta name="viewport" content="width=device-width"> 
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/font-awesome.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300,400,700'>
   <link rel='icon' type='image/png' href='https://static.junge-piraten.de/favicon.png' />
 
@@ -79,14 +80,15 @@ Tadness                                   http://tadness.deviantart.com
     </div>
     <div id="header-right">
       <div id="social">
-        <a class="twitter" href="https://twitter.com/#!/jungePiraten"><i title="Twitter"></i></a>
-        <a class="facebook" href="https://facebook.com/jungePiraten"><i title="Facebook"></i></a>
-        <a class="flickr" href="http://flickr.com/photos/jungePiraten"><i title="Flickr"></i></a>
-        <a class="youtube" href="https://youtube.com/user/jungePiraten"><i title="Youtube"></i></a>
+        <a class="icon-twitter" href="https://twitter.com/#!/jungePiraten" title="Twitter"></a>
+        <a class="icon-facebook" href="https://facebook.com/jungePiraten" title="Facebook"></a>
+        <a class="icon-picture" href="http://flickr.com/photos/jungePiraten" title="Flickr"></a>
+        <a class="icon-google-plus-sign" href="https://plus.google.com/111687817103191810370" title="Google Plus"></a>
+        <a class="icon-github" href="https://github.com/jungepiraten" title="GitHub"></a>
       </div>
       <form action="<?php echo site_url("/"); ?>" method="get" id="search-form">
           <input type="text" placeholder="Suchbegriff" name="s" />
-          <input class="submit" type="submit" value=" " />
+          <button class="submit" type="submit"><i class="icon-search"></i></button>
       </form>
     </div>
   </header>
