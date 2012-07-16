@@ -19,7 +19,7 @@
           <?php endif; ?>
           <?php the_content(); ?>
         
-          <?php if(!is_single() && !is_page()) comments_popup_link(__('Leave a comment', 'jupisnova'), __('1 Comment', 'jupisnova'), _('% Comments', 'jupisnova'), 'comment-button btn'); ?>
+          <?php if(!is_single() && !is_page()) comments_popup_link(__('<i class="icon-plus-sign"></i> kommentieren', 'jupisnova'), __('<i class="icon-comment"></i> ein Kommentar', 'jupisnova'), _('<i class="icon-comments"></i> % Kommentare', 'jupisnova'), 'comment-button btn'); ?>
           <?php if(is_single() && !is_page()) { comments_template(); } ?>
         </div>
       </div>
