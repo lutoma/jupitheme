@@ -79,10 +79,10 @@ Tadness                                   http://tadness.deviantart.com
     </div>
     <div id="header-right">
       <div id="social">
-        <a class="twitter" href="https://twitter.com/#!/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Twitter" title="Twitter" /></a>
-        <a class="facebook" href="https://facebook.com/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Facebook" title="Facebook" /></a>
-        <a class="flickr" href="http://flickr.com/photos/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Flickr" title="Flickr" /></a>
-        <a class="youtube" href="https://youtube.com/user/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Youtube" title="Youtube" /></a>
+        <a class="twitter" href="https://twitter.com/#!/jungePiraten"><i title="Twitter"></i></a>
+        <a class="facebook" href="https://facebook.com/jungePiraten"><i title="Facebook"></i></a>
+        <a class="flickr" href="http://flickr.com/photos/jungePiraten"><i title="Flickr"></i></a>
+        <a class="youtube" href="https://youtube.com/user/jungePiraten"><i title="Youtube"></i></a>
       </div>
       <form action="<?php echo site_url("/"); ?>" method="get" id="search-form">
           <input type="text" placeholder="Suchbegriff" name="s" />
