@@ -150,6 +150,9 @@ header > * {
 	border-bottom: none;
 	color: #fff;
 	margin-left: 5px;
+	display: inline-block;
+	width: 16px;
+	text-align:center;
 }
 
 #social .icon-twitter:hover {
@@ -301,6 +304,16 @@ nav ul #menu-main-menu li.current-menu-item > a:after, nav #menu-main-menu > li:
 	border-bottom: 5px solid #046D8B;
 	position: relative;
 	z-index: 9999;
+}
+nav #menu-main-menu > li:first-child > a {
+	padding-left: 15px;
+}
+nav #menu-main-menu > li:first-child > a:before {
+	font-family: FontAwesome;
+	content: "\f015";
+	position: absolute;
+	left: -6px;
+	top: 3px;
 }
 
 /* submenu */

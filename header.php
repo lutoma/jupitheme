@@ -46,9 +46,9 @@ Tadness                                   http://tadness.deviantart.com
   <?php wp_head(); ?>
 
   <meta name="viewport" content="width=device-width"> 
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/font-awesome.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/font-awesome.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300,400,700'>
   <link rel='icon' type='image/png' href='https://static.junge-piraten.de/favicon.png' />
 
@@ -69,10 +69,6 @@ Tadness                                   http://tadness.deviantart.com
   <header>
     <a id="name" href="<?php echo site_url("/"); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home">Junge <span class="bold">PIRATEN</span></a>
     <img id="signet" src="<?php bloginfo('template_directory'); ?>/img/signet.png" />
-
-    <!--
-        <li class="home"><a href="/"><img src="<?php bloginfo('template_directory'); ?>/img/home_16x16.png" alt="Hauptseite" width="16" height="16" /></a></li>
-    -->
     <?php function menu_empty() {}; wp_nav_menu(array('container' => 'nav', 'container_class' => '', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '')); ?>
     <div id="header-right-skew">
      <div id="header-right-skew-background">
