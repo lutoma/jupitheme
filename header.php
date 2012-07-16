@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width"> 
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/font-awesome.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300,400,700'>
   <link rel='icon' type='image/png' href='https://static.junge-piraten.de/favicon.png' />
 
@@ -38,15 +39,16 @@
     <?php function menu_empty() {}; wp_nav_menu(array('container' => 'nav', 'container_class' => '', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '', 'before' => '<span class="divisor">//</span>')); ?>
     <div id="header-right">
       <div id="social">
-        <a class="twitter" href="https://twitter.com/#!/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Twitter" title="Twitter" /></a>
-        <a class="facebook" href="https://facebook.com/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Facebook" title="Facebook" /></a>
-        <a class="flickr" href="http://flickr.com/photos/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Flickr" title="Flickr" /></a>
-        <a class="youtube" href="https://youtube.com/user/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Youtube" title="Youtube" /></a>
+        <a class="icon-twitter" href="https://twitter.com/#!/jungePiraten" title="Twitter"></a>
+        <a class="icon-facebook" href="https://facebook.com/jungePiraten" title="Facebook"></a>
+        <a class="icon-picture" href="http://flickr.com/photos/jungePiraten" title="Flickr"></a>
+        <a class="icon-google-plus-sign" href="https://plus.google.com/111687817103191810370" title="Google Plus"></a>
+        <a class="icon-github" href="https://github.com/jungepiraten" title="GitHub"></a>
       </div>
       <a id="mitglied-werden" href="https://anmelden.junge-piraten.de/"></a>
       <form action="<?php echo site_url("/"); ?>" method="get" id="search-form">
           <input type="text" placeholder="Suchbegriff" name="s" />
-          <input class="submit" type="submit" value=" " />
+          <button class="submit" type="submit"><i class="icon-search"></i></button>
       </form>
     </div>
   </header>

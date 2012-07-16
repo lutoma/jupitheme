@@ -129,37 +129,31 @@ header > * {
 
 #social {
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 5px;
+	right: 15px;
+	font-size: 20px;
 }
 
 #social a, #social a:hover {
 	border-bottom: none;
 	color: #fff;
-	margin-left: 3px;
+	margin-left: 5px;
 }
 
-#social img {
-	background-image: url(../img/icons/social-sprite.png);
-	background-position-y: 0px;
-	height: 24px;
-	width: 24px;
+#social .icon-twitter:hover {
+	color: #33ccff;
 }
-#social img:hover {
-	background-position-y: -24px;
+#social .icon-facebook:hover {
+	color: #3b5b99;
 }
-
-#social .twitter img {
-	background-position-x: 0px;
+#social .icon-picture:hover {
+	color: #aaa;
 }
-#social .facebook img {
-	background-position-x: -24px;
+#social .icon-google-plus-sign:hover {
+	color: #d84937;
 }
-#social .flickr img {
-	background-position-x: -48px;
-}
-#social .youtube img {
-	background-position-x: -72px;
+#social .icon-github:hover {
+	color: #aaa;
 }
 
 #search-form {
@@ -209,12 +203,14 @@ header > * {
 }
 
 #search-form .submit {
-	background: #2D7DC5 url("../img/lupe.png") no-repeat;
-	background-position: 7px 7px;
+	background: #2D7DC5;
 	padding: 0px;
-	padding-left: 7px;
+	padding-left: 1px;
+	padding-top: 1px;
 	height: 27px !important;
 	width: 27px !important;
+	color: #fff !important;
+	font-size: 14px;
 }
 
 #name {
@@ -647,7 +643,7 @@ footer a, footer a:hover, footer a:visited {
 
 /* Printer optimized view */
 @media print {
-	header, #slider-link, #slider, aside, footer, .comment-button, #topbar, .wp-post-image, .more-link {
+	header, #header-right-skew,4 #slider-link, #slider, aside, footer, .comment-button, #topbar, .wp-post-image, .more-link {
 		display: none;
 	}
 
@@ -658,7 +654,7 @@ footer a, footer a:hover, footer a:visited {
 
 /* Mobile phones */
 @media screen and (max-width: 600px) {
-	aside, .plus, #slider-link, #slider, #topbar, .divisor, #signet, #header-right {
+	aside, .plus, #slider-link, #slider, #topbar, .divisor, #signet, #header-right, #header-right-skew {
 		display: none;
 	}
 
@@ -710,11 +706,6 @@ footer a, footer a:hover, footer a:visited {
 		padding-top: 1px;
 	}
 
-	.wp-post-image {
-		width: 100%;
-		height: auto;
-	}
-
 	nav {
 		left: 0;
 		padding: 0;
@@ -728,6 +719,10 @@ footer a, footer a:hover, footer a:visited {
 
 	nav > ul, nav > ul > li {
 		display: block;
+		clear: both;
+	}
+	nav > ul > li:after {
+		display: none;
 	}
 
 	nav > ul > li {
