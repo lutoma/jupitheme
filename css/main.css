@@ -211,6 +211,10 @@ header > * {
 	padding: 4px !important;
 	margin: 0;
 	width: 220px;
+	font-size: 14px;
+}
+#search-form input[type=text]:-moz-placeholder {
+	color: #aaa;
 }
 
 #search-form .submit {
@@ -320,7 +324,7 @@ nav .sub-menu {
 	display: none;
 	clear: both;
 	background: #046D8B;
-	box-shadow: 0 0 3px #000;
+	box-shadow: 0 0 8px #000;
 }
 nav .sub-menu li {
 	position: relative;
