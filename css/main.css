@@ -59,6 +59,11 @@ blockquote {
 	padding-left: 10px;
 	border-left: 4px solid rgb(201, 230, 228);
 	margin: 10px 40px;
+
+}
+
+address {
+	font-style:none;
 }
 
 .light {
