@@ -598,6 +598,7 @@ nav .sub-menu .sub-menu {
 	border-bottom: 1px dashed #ccc;
 	color: #555;
 	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #wrapper > article .content > .meta a {
@@ -646,16 +647,21 @@ footer a, footer a:hover, footer a:visited {
 /* Wordpress specific foo */
 .comment-button {
 	float: right;
+	font-family: 'Open Sans', sans-serif;
 }
 
-.post {
+.post, .page {
 	margin-bottom: 50px;
+	font-family: 'Quattrocento', serif;
+	font-size: 14px;
+	word-spacing: 1px;
 }
 
-.post-title > a {
+.post-title > a, .page-title > a {
 	color: inherit !important;
 	text-decoration: none !important;
 	border-bottom: 0 solid #fff !important;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .alignleft {
