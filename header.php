@@ -55,8 +55,6 @@ Tadness                                   http://tadness.deviantart.com
   <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf( __( '%s latest posts', 'your-theme' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
   <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'your-theme' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
-  <!-- Javascript is in the footer. -->
 </head>
 <body>
   <!--[if lt IE 7]><p class=chromeframe>Dein Webbrowser ist <em>antik!</em> Bitte <a href="http://browsehappy.com/">installiere einen halbwegs aktuellen Browser</a>, um diese Seite korrekt dargestellt zu sehen.</p><![endif]-->
