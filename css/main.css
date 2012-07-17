@@ -27,7 +27,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: #2B2926;
 	margin-bottom: 0;
 	border-bottom: 1px dotted #bbb;
-	text-transform: uppercase;
 	font-family: 'Open Sans', inherit !important;
 }
 
@@ -582,7 +581,8 @@ nav .sub-menu .sub-menu {
 	background-repeat: repeat;
 	color: #fff;
 	margin: 0;
-	padding: 10px;
+	/* top right bottom left */
+	padding: 12px 17px 9px 17px;
 	font-size: 18px;
 	border-bottom: 0 solid #000;
 	border-top-left-radius: 1px;
