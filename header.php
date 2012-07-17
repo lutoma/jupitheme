@@ -78,7 +78,7 @@ Tadness                                   http://tadness.deviantart.com
       <div id="social">
         <a class="icon-twitter" href="https://twitter.com/#!/jungePiraten" title="Twitter"></a>
         <a class="icon-facebook" href="https://facebook.com/jungePiraten" title="Facebook"></a>
-        <a class="icon-picture" href="http://flickr.com/photos/jungePiraten" title="Flickr"></a>
+        <a class="icon-flickr" href="http://flickr.com/photos/jungePiraten" title="Flickr"><span>•</span><span>•</span></a>
         <a class="icon-google-plus-sign" href="https://plus.google.com/111687817103191810370" title="Google Plus"></a>
         <a class="icon-github" href="https://github.com/jungepiraten" title="GitHub"></a>
       </div>
