@@ -509,10 +509,9 @@ nav .sub-menu .sub-menu {
 
 #wrapper > aside > .box {
 	float: right;
-	width: 170px;
+	width: 180px;
 	margin-bottom: 20px;
 	background: #fff;
-	padding: 5px 10px;
 	padding: 2px;
 	font-size: 13px;
 
@@ -529,7 +528,7 @@ nav .sub-menu .sub-menu {
 	padding-bottom: 5px;
 }
 #wrapper > aside .box ul li {
-	padding: 6px;
+	padding: 6px 9px 7px 12px;
 	margin-bottom: 2px;
 }
 
@@ -553,8 +552,8 @@ nav .sub-menu .sub-menu {
 	font-weight: bold;
 	color: #242424 !important;
 	border-bottom: 1px dashed #ccc !important;
-	margin: 0 5px !important;
-	margin-bottom: 10px !important;
+	/* top right bottom left */
+	margin: -1px 5px 10px 5px !important;
 }
 
 #wrapper > aside h2 a {
