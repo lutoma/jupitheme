@@ -19,4 +19,9 @@
     </article>
     <?php endwhile; ?>
   <br class="clear" />
-<?php get_footer(); ?>
+<section id="pagination">
+  <?php posts_nav_link(); ?>
+</section>
+<?php
+  get_footer();
+?>

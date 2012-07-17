@@ -662,6 +662,34 @@ footer a, footer a:hover, footer a:visited {
 	font-size: 13px;
 }
 
+#pagination {
+	font-size: 0;
+	margin-top: 17px;
+	width: 750px;
+	overflow: hidden;
+}
+#pagination a {
+	display: block;
+	padding: 7px;
+	font-size: 14px;
+	color: black;
+	background: white;
+	box-shadow: 0 0 3px #888;
+}
+#pagination a:hover {
+	border-bottom: 0;
+	color: #046D8B;
+}
+#pagination a:active {
+	color: #262f3a;
+}
+#pagination a:first-child {
+	float: left;
+}
+#pagination a:last-child {
+	float: right;
+}
+
 /* Responsive foo */
 
 /* Printer optimized view */
