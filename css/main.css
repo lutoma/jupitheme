@@ -439,6 +439,13 @@ nav > ul > .home {
 	padding: 6px;
 	margin-bottom: 2px;
 }
+#wrapper > aside .box ul li abbr {
+	display: block;
+	font-size: 10px;
+	border: 0;
+	color: #444;
+	margin-top: 5px;
+}
 
 #wrapper > aside .box ul li:nth-child(odd) {
 	background: #F3F3F3;
