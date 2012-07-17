@@ -82,6 +82,7 @@ Tadness                                   http://tadness.deviantart.com
         <a class="icon-google-plus-sign" href="https://plus.google.com/111687817103191810370" title="Google Plus"></a>
         <a class="icon-github" href="https://github.com/jungepiraten" title="GitHub"></a>
       </div>
+      <a id="mitglied-werden" href="https://anmelden.junge-piraten.de/"></a>
       <form action="<?php echo site_url("/"); ?>" method="get" id="search-form">
           <input type="text" placeholder="Suchbegriff" name="s" />
           <button class="submit" type="submit"><i class="icon-search"></i></button>
@@ -99,4 +100,4 @@ Tadness                                   http://tadness.deviantart.com
       <div class="text">Junge Piraten zu Besuch in Brüssel</div>
     </div>
   </div></a>
-  <?php } ?><!--<a id="mitglied-werden" href="https://anmelden.junge-piraten.de/">&nbsp;</a>-->
+  <?php } ?>
