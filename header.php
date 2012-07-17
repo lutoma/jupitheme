@@ -80,6 +80,7 @@ Tadness                                   http://tadness.deviantart.com
         <a class="flickr" href="http://flickr.com/photos/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Flickr" title="Flickr" /></a>
         <a class="youtube" href="https://youtube.com/user/jungePiraten"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Youtube" title="Youtube" /></a>
       </div>
+      <a id="mitglied-werden" href="https://anmelden.junge-piraten.de/"></a>
       <form action="<?php echo site_url("/"); ?>" method="get" id="search-form">
           <input type="text" placeholder="Suchbegriff" name="s" />
           <input class="submit" type="submit" value=" " />
@@ -97,4 +98,4 @@ Tadness                                   http://tadness.deviantart.com
       <div class="text">Junge Piraten zu Besuch in Brüssel</div>
     </div>
   </div></a>
-  <?php } ?><!--<a id="mitglied-werden" href="https://anmelden.junge-piraten.de/">&nbsp;</a>-->
+  <?php } ?>

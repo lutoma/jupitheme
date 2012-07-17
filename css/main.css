@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Dirty Headline';
+    src: url('../font/dirtyheadline/dirty_headline-webfont.eot');
+    src: url('../font/dirtyheadline/dirty_headline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/dirtyheadline/dirty_headline-webfont.woff') format('woff'),
+         url('../font/dirtyheadline/dirty_headline-webfont.ttf') format('truetype'),
+         url('../font/dirtyheadline/dirty_headline-webfont.svg#DirtyHeadlineRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
 	background: #046D8B;
 	width: 100%;
@@ -152,17 +164,32 @@ header > * {
 
 #mitglied-werden {
 	position: absolute;
-	top: 63px;
-	left: 46px;
-	background: url(../img/werdepirat.png);
-	width: 114px;
-	height: 75px;
+	top: 14px;
+	left: 100px;
+	height: 0;
+	font-family: 'Dirty Headline', sans-serif;
 	border: none !important;
+	-moz-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+	transform: rotate(10deg);
 }
-
-#mitglied-werden:hover {
-	background: url(../img/werdepirat_hover.png);
-	border: none !important;
+#mitglied-werden:before {
+	content: 'Werde';
+	color: #fff;
+	font-size: 30px;
+}
+#mitglied-werden:after {
+	content: 'JUPI!';
+	color: #f78605;
+	display: block;
+	font-size: 45px;
+	margin-left: -7px;
+	margin-top: -20px;
+}
+#mitglied-werden:hover:after {
+	color: #046d8b;
 }
 
 #search-form input {
