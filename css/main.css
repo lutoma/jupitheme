@@ -203,7 +203,7 @@ header > * {
 }
 
 #search-form .submit {
-	background: #2D7DC5 url("http://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/lupe.png") no-repeat;
+	background: #2D7DC5 url("../img/lupe.png") no-repeat;
 	background-position: 7px 7px;
 	padding: 0px;
 	padding-left: 7px;
