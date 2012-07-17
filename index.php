@@ -2,8 +2,6 @@
     <aside>
       <?php dynamic_sidebar(); ?> 
       <a href="https://anmelden.junge-piraten.de/"><img src="<?php bloginfo('template_directory'); ?>/img/mitgliedwerden-banner.png" /></a>
-<!--      <img src="http://berlin.piratenpartei.de/wp-content/uploads/2011/08/banner_grundsatzprogramm.png" />
-      <img src="http://berlin.piratenpartei.de/wp-content/uploads/2011/08/banner_wahlprogramm.png" />-->
       <a href="/die-jungen-piraten/bankverbindung/"><img src="<?php bloginfo('template_directory'); ?>/img/spenden-banner.png" /></a>
     </aside>
     <?php while (have_posts()) : the_post() ?>
