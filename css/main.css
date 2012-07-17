@@ -18,6 +18,15 @@ body {
 	font-size: 14px;
 	line-height: 1.5;
 }
+.icon-flickr {
+	font-size: 25px;
+}
+.icon-flickr:hover span:first-child {
+	color: #0073ff;
+}
+.icon-flickr:hover span:last-child {
+	color: #ff007b;
+}
 
 h2 {
 	font-weight: lighter;
