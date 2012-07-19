@@ -334,18 +334,13 @@ nav > ul > .home {
 	height: 360px;
 	width: 960px;
 	width: 750px;
-	/*background: url(http://lorempixel.com/960/360/), url(http://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags_gray.jpg);*/
-	background: url(../img/bruessel.jpg), url(https://www.piratenpartei.de/wp-content/themes/piratenkleider_1_2/assets/bg-tags_gray.jpg);
-
-	/*background-repeat: no-repeat, repeat;
-	background-position: center 0px, center;
-*/
-	-moz-box-shadow: 0 -5px 8px #666;
+	background: url(../img/bruessel.jpg);
+	box-shadow: 0 -5px 8px #666;
 	-webkit-box-shadow: 0 -5px 8px #666;
+	-moz-box-shadow: 0 -5px 8px #666;
 	-o-box-shadow: 0 -5px 8px #666;
 	-ie-box-shadow: 0 -5px 8px #666;
 	-khtml-box-shadow: 0 -5px 8px #666;
-	box-shadow: 0 -5px 8px #666;
 
 	border-bottom-left-radius: 1px;
 	border-bottom-right-radius: 1px;
