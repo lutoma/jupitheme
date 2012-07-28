@@ -517,11 +517,14 @@ nav > ul > .home {
 	background-repeat: repeat;
 	color: #fff;
 	margin: 0;
-	padding: 10px;
 	font-size: 18px;
 	border-bottom: 0 solid #000;
 	border-top-left-radius: 1px;
 	border-top-right-radius: 1px;
+}
+#wrapper > article .post-title a {
+	display: block;
+	padding: 9px 17px 9px 17px;
 }
 
 #wrapper > article .content {
