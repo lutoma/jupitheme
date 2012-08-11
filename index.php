@@ -1,9 +1,4 @@
 <?php get_header(); ?>
-    <aside>
-      <?php dynamic_sidebar(); ?> 
-      <a href="https://anmelden.junge-piraten.de/"><img src="<?php bloginfo('template_directory'); ?>/img/mitgliedwerden-banner.png" /></a>
-      <a href="/die-jungen-piraten/bankverbindung/"><img src="<?php bloginfo('template_directory'); ?>/img/spenden-banner.png" /></a>
-    </aside>
     <?php while (have_posts()) : the_post() ?>
     <article>
       <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
