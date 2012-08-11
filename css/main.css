@@ -44,6 +44,7 @@ a:hover {
 input[type=text], input[type=password], textarea {
 	border: 1px solid #cecece;
 	padding: 2px;
+	background: #fff;
 }
 
 input[type=button], input[type=submit], button, .btn, .btn:hover {
