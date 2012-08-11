@@ -7,7 +7,7 @@
         <div class="content">
           <?php if(!is_page()): ?>
             <div class="meta">
-              <?php the_author_link(); ?>  – <?php the_category(', '); ?> – <?php the_date('d. m. Y'); ?>
+              <!--<?php the_author_link(); ?>  – --><?php the_category(', '); ?> – <?php the_date('d. m. Y'); ?>
             </div>
           <?php endif; ?>
           <?php the_content(); ?>
