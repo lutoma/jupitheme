@@ -162,6 +162,10 @@ header > * {
 	top: 115px;
 }
 
+#search-form input[type=text]:-moz-placeholder {
+	color: #aaa;
+}
+
 #mitglied-werden {
 	position: absolute;
 	top: 14px;
