@@ -22,7 +22,7 @@
   <!-- Javascript is in the footer. -->
 </head>
 <body>
-  <!--[if lt IE 7]><p class=chromeframe>Dein Webbrowser ist <em>antik!</em> Bitte <a href="http://browsehappy.com/">installiere einen halbwegs aktuellen Browser</a>, um diese Seite korrekt dargestellt zu sehen.</p><![endif]-->
+  <!--[if lt IE 9]><p class=chromeframe>Dein Webbrowser ist <em>veraltet!</em> Bitte <a href="http://browsehappy.com/">installiere einen halbwegs aktuellen Browser</a>, um diese Seite korrekt dargestellt zu sehen.</p><![endif]-->
   <div id="topbar">
     <a href="https://wiki.junge-piraten.de/">Wiki</a>
     <a href="https://forum.junge-piraten.de/">Forum</a>
