@@ -564,6 +564,8 @@ footer a, footer a:hover, footer a:visited {
 
 /* Chromeframe */
 .chromeframe {
+	position: relative;
+	z-index: 999999;
 	background: #181818;
 	color: #fff;
 	margin: 0;
