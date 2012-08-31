@@ -31,7 +31,7 @@
   <div id="headerwrapper">
   <header>
     <a id="name" href="<?php echo site_url("/"); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home">Junge <span class="bold">PIRATEN</span></a>
-    <img id="signet" src="<?php bloginfo('template_directory'); ?>/img/signet.png" />
+    <img id="signet" src="<?php bloginfo('template_directory'); ?>/img/signet.svg" />
 
     <!--
         <li class="home"><a href="/"><img src="<?php bloginfo('template_directory'); ?>/img/home_16x16.png" alt="Hauptseite" width="16" height="16" /></a></li>
