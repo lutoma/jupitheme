@@ -36,7 +36,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: #2B2926;
 	margin-bottom: 0;
 	border-bottom: 1px dotted #bbb;
-	text-transform: uppercase;
 	font-family: 'Open Sans', inherit !important;
 }
 
@@ -411,6 +410,10 @@ nav > ul > .home {
 	width: 180px;
 	min-height: 500px;
 	height: 100%;
+}
+
+#wrapper > aside > h1, #wrapper > aside > h2, #wrapper > aside > h3, #wrapper > aside > h4, #wrapper > aside > h5, #wrapper > aside > h6 {
+	text-transform: uppercase;
 }
 
 #wrapper > aside > a > img {
