@@ -14,8 +14,8 @@ body {
 	background: #046D8B;
 	width: 100%;
 	color: #242424;
-	font-family: 'Open Sans', 'Opensans', sans-serif;
-	font-size: 14px;
+	font-family: 'Source Sans Pro', 'sourcesanspro', sans-serif;
+	font-size: 15px;
 	line-height: 1.5;
 }
 .icon-flickr {
@@ -36,7 +36,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: #2B2926;
 	margin-bottom: 0;
 	border-bottom: 1px dotted #bbb;
-	font-family: 'Open Sans', inherit !important;
 }
 
 a, a:hover, a:visited {
@@ -382,7 +381,6 @@ nav > ul > .home {
 	font-weight: bolder;
 	display: inline-block;
 	border-bottom: 2px dotted #fff;
-	font-family: 'Open Sans', 'Opensans', sans;
 }
 
 .attachment-single-post-thumbnail {
@@ -432,7 +430,8 @@ nav > ul > .home {
 	background: #fff;
 	padding: 5px 10px;
 	padding: 2px;
-	font-size: 13px;
+	font-size: 14px;
+	line-height: 1.4;
 
 	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.33);
 	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.33);
