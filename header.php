@@ -9,7 +9,8 @@
     <meta name="description" content="<?php echo strip_tags(wp_trim_words($post->post_content)); ?>" />
     <meta name="twitter:card" content="summary">
     <meta name="twitter:url" content="<?php echo get_permalink($post->ID); ?>">
-    <meta name="twitter:image" content="<?php echo get_the_post_thumbnail($post->ID); ?>">
+    <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID)); ?>
+    <meta name="twitter:image" content="<?php print_r($image[0]); ?>">
     <meta name="twitter:title" content="<?php wp_title('', true, ''); ?>">
     <meta name="twitter:description" content="<?php echo strip_tags(wp_trim_words($post->post_content)); ?>" />
   <?php } else { ?>
