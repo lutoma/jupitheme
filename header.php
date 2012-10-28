@@ -7,25 +7,25 @@
 
   <?php if (is_single() || is_page()) {?>
     <meta name="description" content="<?php echo strip_tags(wp_trim_words($post->post_content, 55, '')); ?>" />
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@jungePiraten">
-    <meta name="twitter:url" content="<?php echo get_permalink($post->ID); ?>">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@jungePiraten" />
+    <meta name="twitter:url" content="<?php echo get_permalink($post->ID); ?>" />
     <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID)); ?>
-    <meta name="twitter:image" content="<?php print_r($image[0]); ?>">
-    <meta name="twitter:title" content="<?php wp_title('', true, ''); ?>">
+    <meta name="twitter:image" content="<?php echo $image[0]; ?>" />
+    <meta name="twitter:title" content="<?php wp_title('', true, ''); ?>" />
     <meta name="twitter:description" content="<?php echo strip_tags(wp_trim_words($post->post_content, 55, '')); ?>" />
   <?php } else { ?>
     <meta name="description" content="Die Jungen Piraten sind die Jugendorganisation der Piratenpartei und setzen 
-sich für die Belange Jugendlicher in der Politik ein.">
+sich für die Belange Jugendlicher in der Politik ein." />
   <?php } ?>
 
   <?php wp_head(); ?>
 
-  <meta name="viewport" content="width=device-width"> 
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/font-awesome.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700|Open+Sans+Condensed:300,400,700'>
+  <meta name="viewport" content="width=device-width" /> 
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" />
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css" />
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/font-awesome.css" />
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700|Open+Sans+Condensed:300,400,700' />
   <link rel='icon' type='image/png' href='https://static.junge-piraten.de/favicon.png' />
 
   <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf( __( '%s latest posts', 'your-theme' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
