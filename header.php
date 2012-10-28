@@ -4,8 +4,14 @@
   <meta charset="utf-8">
   <!--[if ie]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
   <title><?php wp_title('&laquo;', true, 'right'); bloginfo('name'); ?></title>
+
   <?php if (is_single() || is_page()) {?>
     <meta name="description" content="<?php echo strip_tags(wp_trim_words($post->post_content)); ?>" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="<?php echo get_permalink($post->ID); ?>">
+    <meta name="twitter:image" content="<?php echo get_the_post_thumbnail($post->ID); ?>">
+    <meta name="twitter:title" content="<?php wp_title('', true, ''); ?>">
+    <meta name="twitter:description" content="<?php echo strip_tags(wp_trim_words($post->post_content)); ?>" />
   <?php } else { ?>
     <meta name="description" content="Die Jungen Piraten sind die Jugendorganisation der Piratenpartei und setzen 
 sich für die Belange Jugendlicher in der Politik ein.">
