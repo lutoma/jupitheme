@@ -4,7 +4,12 @@
   <meta charset="utf-8">
   <!--[if ie]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
   <title><?php wp_title('&laquo;', true, 'right'); bloginfo('name'); ?></title>
-  <meta name="description" content="Die Jungen Piraten sind die Jugendorganisation der Piratenpartei und setzen sich für die Belange Jugendlicher in der Politik ein.">
+  <?php if (is_single() && is_page()) {?>
+    <meta name="description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />
+  <?php } else { ?>
+    <meta name="description" content="Die Jungen Piraten sind die Jugendorganisation der Piratenpartei und setzen 
+sich für die Belange Jugendlicher in der Politik ein.">
+  <?php } ?>
 
   <?php wp_head(); ?>
 
