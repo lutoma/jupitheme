@@ -6,13 +6,14 @@
   <title><?php wp_title('&laquo;', true, 'right'); bloginfo('name'); ?></title>
 
   <?php if (is_single() || is_page()) {?>
-    <meta name="description" content="<?php echo strip_tags(wp_trim_words($post->post_content)); ?>" />
+    <meta name="description" content="<?php echo strip_tags(wp_trim_words($post->post_content, 55, '')); ?>" />
     <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@jungePiraten">
     <meta name="twitter:url" content="<?php echo get_permalink($post->ID); ?>">
     <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID)); ?>
     <meta name="twitter:image" content="<?php print_r($image[0]); ?>">
     <meta name="twitter:title" content="<?php wp_title('', true, ''); ?>">
-    <meta name="twitter:description" content="<?php echo strip_tags(wp_trim_words($post->post_content)); ?>" />
+    <meta name="twitter:description" content="<?php echo strip_tags(wp_trim_words($post->post_content, 55, '')); ?>" />
   <?php } else { ?>
     <meta name="description" content="Die Jungen Piraten sind die Jugendorganisation der Piratenpartei und setzen 
 sich für die Belange Jugendlicher in der Politik ein.">
