@@ -279,7 +279,6 @@ nav >  ul > li {
 
 nav a {
 	display: inline;
-	float: right;
 	border: 0 solid #fff !important;
 	color: #fff !important;
 	border-radius: 1px;
