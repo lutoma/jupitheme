@@ -68,7 +68,7 @@ sich für die Belange Jugendlicher in der Politik ein." />
   </div>
   <div id="wrapper">
 
-  <?php if(is_home() && !is_paged()) { ?>  
+  <?php if(is_home() && !is_paged() && false) { ?>  
   <a href="/2012/06/30/junge-piraten-beteiligen-sich-an-der-aktion-schlussel-nach-brussel/" id="slider-link"><div id="slider">
     <div class="box">
       <span class="plus">+</span>
