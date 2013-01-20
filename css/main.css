@@ -35,8 +35,8 @@ h2 {
 
 h1, h2, h3, h4, h5, h6 {
 	color: #2B2926;
-	margin-bottom: 0;
-	border-bottom: 1px dotted #bbb;
+	font-family: 'Viga', 'Source Sans Pro', 'sourcesanspro', sans-serif;
+	font-weight: 400;
 }
 
 a, a:hover, a:visited {
@@ -359,28 +359,6 @@ nav > ul > .home {
 
 }
 
-#slider > .box > .plus {
-	position: absolute;
-	color: #fff;
-	top: -11px;
-	right: -5px;
-	font-size: 18px;
-	font-weight: bold;
-}
-
-#slider > .box > h1 {
-	font-size: 26px;
-	color: #fff;
-	margin: 0;
-	margin-bottom: 8px;
-	margin-left: -18px;
-	padding-left: 18px;
-	clear: both;
-	font-weight: bolder;
-	display: inline-block;
-	border-bottom: 2px dotted #fff;
-}
-
 .attachment-single-post-thumbnail {
 	margin-bottom: 20px;
 }
@@ -472,7 +450,6 @@ nav > ul > .home {
 
 #wrapper > aside h2 {
 	font-size: 19px;
-	font-weight: bold;
 	color: #242424 !important;
 	border-bottom: 1px dashed #ccc !important;
 	margin: 0 5px !important;
