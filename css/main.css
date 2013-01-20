@@ -512,7 +512,7 @@ nav > ul > .home {
 	border-bottom: 0 solid #000;
 	border-top-left-radius: 1px;
 	border-top-right-radius: 1px;
-	font-family: 'Viga', inherit;
+	font-family: 'Viga', 'Source Sans Pro', 'sourcesanspro', sans-serif;
 }
 #wrapper > article .post-title a {
 	display: block;
