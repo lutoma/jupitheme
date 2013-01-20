@@ -507,11 +507,12 @@ nav > ul > .home {
 
 #wrapper > article .post-title {
 	background: url(../img/title_bg.png);
-	margin: 20px 10px;
+	margin: 0;
 	font-size: 1.6em;
 	border-bottom: 0 solid #000;
 	border-top-left-radius: 1px;
 	border-top-right-radius: 1px;
+	font-family: 'Viga', inherit;
 }
 #wrapper > article .post-title a {
 	display: block;
