@@ -25,7 +25,8 @@ sich für die Belange Jugendlicher in der Politik ein." />
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" />
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css" />
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/font-awesome.css" />
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700|Open+Sans+Condensed:300,400,700' />
+  <link rel='stylesheet' 
+href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700|Open+Sans+Condensed:300,700|Viga:400' />
   <link rel='icon' type='image/png' href='https://static.junge-piraten.de/favicon.png' />
 
   <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf( __( '%s latest posts', 'your-theme' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />

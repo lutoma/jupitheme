@@ -506,13 +506,9 @@ nav > ul > .home {
 }
 
 #wrapper > article .post-title {
-	background: #111;
-	background-image: url(../img/headerpattern.png);
-	background-position: top left;
-	background-repeat: repeat;
-	color: #fff;
-	margin: 0;
-	font-size: 1.3em;
+	background: url(../img/title_bg.png);
+	margin: 20px 10px;
+	font-size: 1.6em;
 	border-bottom: 0 solid #000;
 	border-top-left-radius: 1px;
 	border-top-right-radius: 1px;
