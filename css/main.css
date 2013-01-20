@@ -11,7 +11,7 @@
 }
 
 body {
-	background: #046D8B;
+	background: url(../img/main_bg.png) #046D8B;
 	width: 100%;
 	color: #242424;
 	font-family: 'Source Sans Pro', 'sourcesanspro', sans-serif;
