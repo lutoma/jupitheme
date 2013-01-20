@@ -97,8 +97,6 @@ address {
 	position: relative;
 	z-index: 50;
 	width: 100%;
-	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQALh4eH/GWF8EGflypWMYAEYB8RmROaABACeBw4JNO4QhQAAAABJRU5ErkJggg==) repeat;*/
-	background-color: #035C75;
 }
 
 header {
