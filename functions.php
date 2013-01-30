@@ -17,7 +17,7 @@ function register_theme_options(){
 }
 
 function theme_options_add_page() {
-	add_theme_page('Optionen', 'Optionen', 'edit_theme_options', 'theme-options', 'kb_theme_options_page');
+	add_theme_page('Theme-Optionen', 'Theme-Optionen', 'edit_theme_options', 'theme-options', 'kb_theme_options_page');
 }
 
 // Sidebar
@@ -39,7 +39,7 @@ function kb_theme_options_page() {
 		$_REQUEST['settings-updated'] = false; ?>
 
 		<div class="wrap"> 
-		<?php screen_icon(); ?><h2>Theme-Optionen für <?php bloginfo('name'); ?></h2> 
+		<?php screen_icon(); ?><h2>Theme-Optionen für Jupisnova ?></h2> 
 
 		<?php if ( false !== $_REQUEST['settings-updated'] ) : ?> 
 		<div class="updated fade">
@@ -53,9 +53,9 @@ function kb_theme_options_page() {
 
 	    <table class="form-table">
 	      <tr valign="top">
-	        <th scope="row">Test</th>
-	        <td><input id="kb_theme_options[test]" class="regular-text" type="text" name="kb_theme_options[test]" value="<?php esc_attr_e( $options['test'] ); ?>" /></td>
-	      </tr>  
+	        <th scope="row">Seitentitel (z.B. JuPis &lt;span class="bold"&gt;Berlin&lt;/span&gt;)</th>
+	        <td><input id="kb_theme_options[title]" class="regular-text" type="text" name="kb_theme_options[title]" value="<?php esc_attr_e( $options['title'] ); ?>" /></td>
+	      </tr>
 	    </table>
 	    
 	    <!-- submit -->
