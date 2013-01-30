@@ -39,7 +39,7 @@ function kb_theme_options_page() {
 		$_REQUEST['settings-updated'] = false; ?>
 
 		<div class="wrap"> 
-		<?php screen_icon(); ?><h2>Theme-Optionen für Jupisnova ?></h2> 
+		<?php screen_icon(); ?><h2>Theme-Optionen für Jupisnova</h2> 
 
 		<?php if ( false !== $_REQUEST['settings-updated'] ) : ?> 
 		<div class="updated fade">
@@ -56,8 +56,28 @@ function kb_theme_options_page() {
 	        <th scope="row">Seitentitel (z.B. JuPis &lt;span class="bold"&gt;Berlin&lt;/span&gt;)</th>
 	        <td><input id="kb_theme_options[title]" class="regular-text" type="text" name="kb_theme_options[title]" value="<?php esc_attr_e( $options['title'] ); ?>" /></td>
 	      </tr>
+	      <tr valign="top">
+	        <th scope="row">Twitter-Account (z.B. "jungePiraten")</th>
+	        <td><input id="kb_theme_options[twitter]" class="regular-text" type="text" name="kb_theme_options[twitter]" value="<?php esc_attr_e( $options['twitter'] ); ?>" /></td>
+	      </tr>
+	      <tr valign="top">
+	        <th scope="row">Facebook-Account (z.B. "jungePiraten")</th>
+	        <td><input id="kb_theme_options[facebook]" class="regular-text" type="text" name="kb_theme_options[facebook]" value="<?php esc_attr_e( $options['facebook'] ); ?>" /></td>
+	      </tr>
+	      <tr valign="top">
+	        <th scope="row">Flickr-Account (z.B. "jungePiraten")</th>
+	        <td><input id="kb_theme_options[flickr]" class="regular-text" type="text" name="kb_theme_options[flickr]" value="<?php esc_attr_e( $options['flickr'] ); ?>" /></td>
+	      </tr>
+	      <tr valign="top">
+	        <th scope="row">Google+-Account (z.B. "111687817103191810370")</th>
+	        <td><input id="kb_theme_options[googleplus]" class="regular-text" type="text" name="kb_theme_options[googleplus]" value="<?php esc_attr_e( $options['googleplus'] ); ?>" /></td>
+	      </tr>
+	      <tr valign="top">
+	        <th scope="row">Github-Account (z.B. "jungePiraten")</th>
+	        <td><input id="kb_theme_options[github]" class="regular-text" type="text" name="kb_theme_options[github]" value="<?php esc_attr_e( $options['github'] ); ?>" /></td>
+	      </tr>
 	    </table>
-	    
+
 	    <!-- submit -->
 	    <p class="submit"><input type="submit" class="button-primary" value="Einstellungen speichern" /></p>
 	  </form>
