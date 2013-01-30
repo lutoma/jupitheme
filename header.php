@@ -57,12 +57,12 @@
     <?php function menu_empty() {}; wp_nav_menu(array('container' => 'nav', 'container_class' => '', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '', 'before' => '<span class="divisor">//</span>')); ?>
     <div id="header-right">
       <div id="social">
-        <a class="icon-twitter" href="https://twitter.com/#!/<?php $options['twitter'] != '' ? echo $options['twitter'] : echo 'jungePiraten' ?>" title="Twitter"></a>
-        <a class="icon-facebook" href="https://facebook.com/<?php $options['facebook'] != '' ? echo $options['facebook'] : echo 'jungePiraten' ?>" title="Facebook"></a>
-        <a class="icon-flickr" href="http://flickr.com/photos/<?php $options['flickr'] != '' ? echo $options['flickr'] : echo 'jungePiraten' ?>" title="Flickr"><span>•</span><span>•</span></a>
-        <a class="icon-google-plus-sign" href="https://plus.google.com/<?php $options['googleplus'] != '' ? echo $options['googleplus'] : echo '111687817103191810370' ?>" title="Google Plus"></a>
-        <a class="icon-github" href="https://github.com/<?php $options['github'] != '' ? echo $options['github'] : echo 'jungePiraten' ?>" title="GitHub"></a>
-      </div>
+        <?php if(!empty($options['twitter'])) { ?><a class="icon-twitter" href="https://twitter.com/#!/<?php echo $options['twitter']; ?>" title="Twitter"></a><?php } ?>
+        <?php if(!empty($options['facebook'])) { ?><a class="icon-facebook" href="https://facebook.com/<?php echo $options['facebook']; ?>" title="facebook"></a><?php } ?>
+        <?php if(!empty($options['flickr'])) { ?><a class="icon-flickr" href="https://flickr.com/photos/<?php echo $options['flickr']; ?>" title="flickr"></a><?php } ?>
+        <?php if(!empty($options['googleplus'])) { ?><a class="icon-google-plus-sign" href="https://plus.google.com/<?php echo $options['googleplus']; ?>" title="googleplus"></a><?php } ?>
+        <?php if(!empty($options['github'])) { ?><a class="icon-github" href="https://github.com/<?php echo $options['github']; ?>" title="github"></a><?php } ?>
+
       <a id="mitglied-werden" href="https://anmelden.junge-piraten.de/"></a>
       <form action="<?php echo site_url("/"); ?>" method="get" id="search-form">
           <input type="text" placeholder="Suchbegriff" name="s" />
