@@ -30,9 +30,9 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" />
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css" />
 
-  <?php if(!empty($options['twitter'])) { ?>
+  <?php if(!empty($options['skyline'])) { ?>
     <style>
-      background: url(<?php echo $options['twitter']; ?>) repeat-x bottom left #046D8B;
+      background: url(<?php echo $options['skyline']; ?>) repeat-x bottom left #046D8B;
       background-attachment: fixed !important;
     </style>
   <?php } ?>
