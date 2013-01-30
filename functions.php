@@ -58,11 +58,11 @@ function kb_theme_options_page() {
 	      </tr>
 	      <tr valign="top">
 	        <th scope="row"><b>Wikilink</b> (ganz oben links; z.B. "NDS:Hauptseite")</th>
-	        <td><input id="kb_theme_options[wikilink]" class="regular-text" type="text" name="kb_theme_options[twitter]" value="<?php esc_attr_e( $options['twitter'] ); ?>" /></td>
+	        <td><input id="kb_theme_options[wikilink]" class="regular-text" type="text" name="kb_theme_options[wikilink]" value="<?php esc_attr_e( $options['wikilink'] ); ?>" /></td>
 	      </tr>
 	      <tr valign="top">
 	        <th scope="row"><b>Forum-ID</b> (ganz oben links; z.B. "14", leerlassen für Startseite)</th>
-	        <td><input id="kb_theme_options[forumlink]" class="regular-text" type="text" name="kb_theme_options[twitter]" value="<?php esc_attr_e( $options['twitter'] ); ?>" /></td>
+	        <td><input id="kb_theme_options[forumlink]" class="regular-text" type="text" name="kb_theme_options[forumlink]" value="<?php esc_attr_e( $options['forumlink'] ); ?>" /></td>
 	      </tr>
 	      <tr valign="top">
 	        <th scope="row"><b>Twitter-Account</b> (z.B. "jungePiraten")</th>
