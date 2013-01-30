@@ -32,8 +32,10 @@
 
   <?php if(!empty($options['skyline'])) { ?>
     <style>
-      background: url(<?php echo $options['skyline']; ?>) repeat-x bottom left #046D8B;
-      background-attachment: fixed !important;
+      body {
+        background: url(<?php echo $options['skyline']; ?>) repeat-x bottom left #046D8B;
+        background-attachment: fixed !important;
+      }
     </style>
   <?php } ?>
 
