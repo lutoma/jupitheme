@@ -57,11 +57,11 @@
     <?php function menu_empty() {}; wp_nav_menu(array('container' => 'nav', 'container_class' => '', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '', 'before' => '<span class="divisor">//</span>')); ?>
     <div id="header-right">
       <div id="social">
-        <a class="icon-twitter" href="https://twitter.com/#!/<?php $options['twitter'] != '' ? $options['twitter'] : 'jungePiraten' ?>" title="Twitter"></a>
-        <a class="icon-facebook" href="https://facebook.com/<?php $options['facebook'] != '' ? $options['facebook'] : 'jungePiraten' ?>" title="Facebook"></a>
-        <a class="icon-flickr" href="http://flickr.com/photos/<?php $options['flickr'] != '' ? $options['flickr'] : 'jungePiraten' ?>" title="Flickr"><span>•</span><span>•</span></a>
-        <a class="icon-google-plus-sign" href="https://plus.google.com/<?php $options['googleplus'] != '' ? $options['googleplus'] : '111687817103191810370' ?>" title="Google Plus"></a>
-        <a class="icon-github" href="https://github.com/<?php $options['github'] != '' ? $options['github'] : 'jungePiraten' ?>" title="GitHub"></a>
+        <a class="icon-twitter" href="https://twitter.com/#!/<?php $options['twitter'] != '' ? echo $options['twitter'] : echo 'jungePiraten' ?>" title="Twitter"></a>
+        <a class="icon-facebook" href="https://facebook.com/<?php $options['facebook'] != '' ? echo $options['facebook'] : echo 'jungePiraten' ?>" title="Facebook"></a>
+        <a class="icon-flickr" href="http://flickr.com/photos/<?php $options['flickr'] != '' ? echo $options['flickr'] : echo 'jungePiraten' ?>" title="Flickr"><span>•</span><span>•</span></a>
+        <a class="icon-google-plus-sign" href="https://plus.google.com/<?php $options['googleplus'] != '' ? echo $options['googleplus'] : echo '111687817103191810370' ?>" title="Google Plus"></a>
+        <a class="icon-github" href="https://github.com/<?php $options['github'] != '' ? echo $options['github'] : echo 'jungePiraten' ?>" title="GitHub"></a>
       </div>
       <a id="mitglied-werden" href="https://anmelden.junge-piraten.de/"></a>
       <form action="<?php echo site_url("/"); ?>" method="get" id="search-form">
