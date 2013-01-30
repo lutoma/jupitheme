@@ -29,6 +29,14 @@
   <meta name="viewport" content="width=device-width" /> 
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" />
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css" />
+
+  <?php if(!empty($options['twitter'])) { ?>
+    <style>
+      background: url(<?php echo $options['twitter']; ?>) repeat-x bottom left #046D8B;
+      background-attachment: fixed !important;
+    </style>
+  <?php } ?>
+
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/font-awesome.css" />
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700|Open+Sans+Condensed:300,700|Viga:400' />
   <link rel='icon' type='image/png' href='https://static.junge-piraten.de/favicon.png' />
@@ -51,9 +59,6 @@
     <a id="name" href="<?php echo site_url("/"); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php if(isset($options['title']) && $options['title'] != '') { echo $options['title']; } else { ?>Junge <span class="bold">PIRATEN</span><?php } ?></a>
     <img id="signet" src="<?php bloginfo('template_directory'); ?>/img/signet.svg" />
 
-    <!--
-        <li class="home"><a href="/"><img src="<?php bloginfo('template_directory'); ?>/img/home_16x16.png" alt="Hauptseite" width="16" height="16" /></a></li>
-    -->
     <?php function menu_empty() {}; wp_nav_menu(array('container' => 'nav', 'container_class' => '', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '', 'before' => '<span class="divisor">//</span>')); ?>
     <div id="header-right">
       <div id="social">

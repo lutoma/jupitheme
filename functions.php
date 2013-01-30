@@ -36,7 +36,7 @@ set_post_thumbnail_size( 750, 120, true ); // Normal post thumbnails
 function load_admin_scripts() {
 	wp_enqueue_script('media-upload');
 	wp_enqueue_script('thickbox');
-	wp_register_script('my-upload', WP_PLUGIN_URL.'/js/upload.js', array('jquery','media-upload','thickbox'));
+	wp_register_script('my-upload', '/wp-content/themes/jupisnova/js/upload.js', array('jquery','media-upload','thickbox'));
 	wp_enqueue_script('my-upload');
 }
 
@@ -74,11 +74,11 @@ function kb_theme_options_page() {
 				<td><input id="kb_theme_options[title]" class="regular-text" type="text" name="kb_theme_options[title]" value="<?php esc_attr_e( $options['title'] ); ?>" /></td>
 			</tr>
 			<tr valign="top">
-				<th scope="row">Upload Image</th>
-				<td><label for="upload_image">
-				<input id="upload_image" type="text" size="36" name="upload_image" value="" />
-				<input id="upload_image_button" type="button" value="Upload Image" />
-				<br />Enter an URL or upload an image for the banner.
+				<th scope="row">Hintergrundbild unten (Skyline)</th>
+				<td><label for="kb_theme_options[skyline]">
+				<input id="skyline" class="regular-text" type="text" size="36" name="kb_theme_options[skyline]" value="" />
+				<input id="skyline_button" type="button" class="button" value="Bild auswählen / hochladen" />
+				<br />Gib die URL eines Bildes für die Skyline im Hintergrund unten (z.B. bei Berlin eingesetzt) an oder wähle eines aus der Mediathek.
 				</label></td>
 			</tr>
 			<tr valign="top">
