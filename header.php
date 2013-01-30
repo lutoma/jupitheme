@@ -1,3 +1,4 @@
+<?php $options = get_option('kb_theme_options'); ?>
 <!doctype html>
 <html lang="de">
 <head>
@@ -47,7 +48,7 @@
   </div>
   <div id="headerwrapper">
   <header>
-    <a id="name" href="<?php echo site_url("/"); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home">Junge <span class="bold">PIRATEN</span></a>
+    <a id="name" href="<?php echo site_url("/"); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php if(isset($options['title']) && $options['title'] != '') { echo $options['title']; } else { ?>Junge <span class="bold">PIRATEN</span><?php } ?></a>
     <img id="signet" src="<?php bloginfo('template_directory'); ?>/img/signet.svg" />
 
     <!--
