@@ -59,7 +59,7 @@
       <div id="social">
         <?php if(!empty($options['twitter'])) { ?><a class="icon-twitter" href="https://twitter.com/#!/<?php echo $options['twitter']; ?>" title="Twitter"></a><?php } ?>
         <?php if(!empty($options['facebook'])) { ?><a class="icon-facebook" href="https://facebook.com/<?php echo $options['facebook']; ?>" title="facebook"></a><?php } ?>
-        <?php if(!empty($options['flickr'])) { ?><a class="icon-flickr" href="https://flickr.com/photos/<?php echo $options['flickr']; ?>" title="flickr"><span>•</span><span>•</span></a><?php } ?>
+        <?php if(!empty($options['flickr'])) { ?><a class="icon-flickr" href="http://flickr.com/photos/<?php echo $options['flickr']; ?>" title="flickr"><span>•</span><span>•</span></a><?php } ?>
         <?php if(!empty($options['googleplus'])) { ?><a class="icon-google-plus-sign" href="https://plus.google.com/<?php echo $options['googleplus']; ?>" title="googleplus"></a><?php } ?>
         <?php if(!empty($options['github'])) { ?><a class="icon-github" href="https://github.com/<?php echo $options['github']; ?>" title="github"></a><?php } ?>
       </div>
