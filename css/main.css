@@ -17,6 +17,13 @@ body {
 	font-family: 'Source Sans Pro', 'sourcesanspro', sans-serif;
 	font-size: 17px;
 	line-height: 1.6;
+
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-o-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	-webkit-font-smoothing: antialiased;
 }
 
 .icon-flickr {
