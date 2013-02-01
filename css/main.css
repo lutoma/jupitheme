@@ -505,6 +505,7 @@ nav > ul > .home {
 
 #wrapper > article .content {
 	padding: 5px 17px;
+	overflow: hidden;
 }
 
 #wrapper > article .content > .meta {
