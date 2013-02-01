@@ -506,6 +506,11 @@ nav > ul > .home {
 #wrapper > article .content {
 	padding: 5px 17px;
 	overflow: hidden;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-o-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
 }
 
 #wrapper > article .content > .meta {
