@@ -44,8 +44,60 @@ nav {
 		&.current_page_item > a, a:hover {
 			border-bottom: 1px solid #ccc !important;
 		}
+
 		.sub-menu {
 			display: none;
+			position: absolute;
+			clear: both;
+			background: #fff;
+			margin-top: 7px;
+			padding: 5px 0 5px 0;
+			@include box-shadow(0 0 3px #000);
+
+			&:before {
+				font-family: FontAwesome;
+				content: "\f0d8";
+				position: absolute;
+				top: -11px;
+				padding: 0 60px 0 60px;
+			}
+			li {
+				position: relative;
+				margin-right: 0 !important;
+				clear: both;
+				line-height: auto;
+
+				.divisor {
+					display: none;
+				}
+				a {
+					display: block;
+					width: 135px;
+					margin: 0 !important;
+					padding: 3px 7px 5px 10px;
+					border: 0 !important;
+					font-weight: normal;
+					color: #000 !important;
+
+					&:hover {
+						background: #ddd;
+					}
+				}
+				.sub-menu {
+					display: none;
+					position: absolute;
+					z-index: 999999;
+					right: -140px;
+					top: 5px;
+
+					&:before {
+						content: '';
+					}
+				}
+				&:hover > .sub-menu {
+					display: block;
+				}
+			}
 		}
 	}
 }
