@@ -56,24 +56,25 @@
 				display: block;
 				padding: 8px 10px 8px 10px;
 			}
-			.content {
-				padding: 5px 17px;
-				overflow: hidden;
-				@include hyphens(auto);
+		}
 
-				> .meta {
-					padding: 8px 2px;
-					border-bottom: 1px dashed #ccc;
+		.content {
+			padding: 5px 17px;
+			overflow: hidden;
+			@include hyphens(auto);
+
+			> .meta {
+				padding: 8px 2px;
+				border-bottom: 1px dashed #ccc;
+				color: #555;
+				font-size: 13px;
+
+				a {
+					border-bottom: none;
 					color: #555;
-					font-size: 13px;
 
-					a {
-						border-bottom: none;
-						color: #555;
-
-						&:hover {
-							color: #F88915;
-						}
+					&:hover {
+						color: #F88915;
 					}
 				}
 			}
