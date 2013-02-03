@@ -28,7 +28,6 @@
 
   <meta name="viewport" content="width=device-width" /> 
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" />
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css" />
 
   <?php if(!empty($options['skyline'])) { ?>
     <style>

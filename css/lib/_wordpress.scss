@@ -1,0 +1,79 @@
+.comment-button {
+	float: right;
+}
+
+.post {
+	margin-bottom: 50px;
+}
+
+.post-title > a {
+	color: inherit !important;
+	text-decoration: none !important;
+	border-bottom: 0 solid #fff !important;
+}
+
+.alignleft {
+	float: left;
+	margin: 5px;
+}
+
+.alignleft {
+	float: right;
+	margin: 5px;
+}
+
+.type-page {
+	min-height: 400px;
+}
+
+.commentmetadata {
+	font-size: 10px;
+	padding-top: 3px;
+}
+
+.comment {
+	padding: 10px 8px;
+	margin-bottom: 5px;
+}
+
+.even {
+	background: #f3f3f3;
+}
+
+.odd {
+	background: #fafafa;
+}
+
+#commentform label {
+	margin-left: 5px;
+}
+
+/* Wtf, Wordpress? Stup fucking around with themes by inserting arbitrary own crap css. */
+.post-title > a > .dquo {
+	margin-left: 0;
+}
+
+.alignleft {
+	float: left;
+	margin: 10px 20px;
+	margin-left: 0;
+}
+
+.alignright {
+	float: right;
+	margin: 10px 20px;
+	margin-right: 0;
+}
+
+.wp-caption {
+	padding: 5px;
+	width: auto;
+	border: 1px solid #ededed;
+}
+
+.wp-caption-text {
+	margin: 0;
+	margin-top: 5px;
+	padding: 0;
+	font-size: 13px;
+}

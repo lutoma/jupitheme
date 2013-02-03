@@ -1,0 +1,87 @@
+body {
+	background: url(../img/main_bg.png) #046D8B;
+	width: 100%;
+	color: #242424;
+	font-family: 'Source Sans Pro', 'sourcesanspro', sans-serif;
+	font-size: 17px;
+	line-height: 1.6;
+}
+
+#wrapper {
+	position: relative;
+	z-index: 1;
+	margin: 0 23px;
+	padding: 0;
+	width: 960px;
+	margin: 0px auto;
+	margin-bottom: 10px;
+}
+
+.chromeframe {
+	position: relative;
+	z-index: 999999;
+	background: #181818;
+	color: #fff;
+	margin: 0;
+	padding: 0.2em 0;
+	padding-left: 10px;
+	border-bottom: 2px solid #ccc;
+	margin-bottom: 5px;
+}
+
+.chromeframe a {
+	color: #fff !important;
+	border-bottom: 1px dotted #fff !important;
+}
+
+h2 {
+	font-weight: lighter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #2B2926;
+	font-family: 'Viga', 'Source Sans Pro', 'sourcesanspro', sans-serif;
+	font-weight: 400;
+}
+
+a, a:hover, a:visited {
+	text-decoration: none;
+	color: #DE2355;
+}
+
+a:hover {
+	color: #2B2926;
+	border-bottom: 1px dotted #2B2926;
+}
+
+input[type=text], input[type=password], textarea {
+	border: 1px solid #cecece;
+	padding: 2px;
+	background: #fff;
+}
+
+input[type=button], input[type=submit], button, .btn, .btn:hover {
+	border: 1px solid #ededed !important;
+	color: #242424 !important;
+	padding: 3px 5px;
+	border: none !important;
+	cursor: pointer;
+}
+
+blockquote {
+	padding: 6px;
+	padding-left: 10px;
+	border-left: 4px solid rgb(201, 230, 228);
+	margin: 10px 40px;
+
+}
+
+address {
+	font-style: normal;
+}
+
+.light {
+	font-weight: lighter !important;
+}
+
+.clear { clear: both; }
