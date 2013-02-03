@@ -1,7 +1,7 @@
 body {
-	background: url(../img/main_bg.png) #046D8B;
+	background: url(../img/main_bg.png) $jupis-blue;
 	width: 100%;
-	color: #242424;
+	color: $jupis-gray;
 	font-family: 'Source Sans Pro', 'sourcesanspro', sans-serif;
 	font-size: 17px;
 	line-height: 1.6;
@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a, a:hover, a:visited {
 	text-decoration: none;
-	color: #DE2355;
+	color: $jupis-pink;
 }
 
 a:hover {
@@ -64,7 +64,7 @@ input[type=text], input[type=password], textarea {
 
 input[type=button], input[type=submit], button, .btn, .btn:hover {
 	border: 1px solid #ededed !important;
-	color: #242424 !important;
+	color: $jupis-gray !important;
 	padding: 3px 5px;
 	border: none !important;
 	cursor: pointer;

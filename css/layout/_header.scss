@@ -27,7 +27,7 @@
 			image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQIW2NkQAPy8vKSjMhiIIGHDx8+hwvCBECKwILIAmBBdAGQIACxChB8RLDalgAAAABJRU5ErkJggg==);
 			position: top left, bottom left;
 			repeat: repeat, repeat-x;
-			color: #f7931e;
+			color: $jupis-orange;
 		}
 		border: {
 			left: 1px solid #888;
@@ -65,7 +65,7 @@
 			text: {
 				decoration: none !important;
 				transform: uppercase;
-				shadow: -1px 0 #F7931E, 0 1px #F7931E, 1px 0 #F7931E, 0 -1px #F7931E;
+				shadow: -1px 0 $jupis-orange, 0 1px $jupis-orange, 1px 0 $jupis-orange, 0 -1px $jupis-orange;
 			}
 
 			> .bold {
