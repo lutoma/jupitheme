@@ -14,7 +14,7 @@
 			<meta name="twitter:image" content="<?php echo $image[0]; ?>" />
 			<meta name="twitter:title" content="<?php wp_title('', true, ''); ?>" />
 			<meta name="twitter:description" content="<?php echo strip_tags(wp_trim_words($post->post_content, 55, '')); ?>" />
-		<?php else ?>
+		<?php else: ?>
 			<meta name="description" content="Die Jungen Piraten sind die Jugendorganisation der Piratenpartei und setzen sich für die Belange Jugendlicher in der Politik ein." />
 		<?php endif; ?>
 
