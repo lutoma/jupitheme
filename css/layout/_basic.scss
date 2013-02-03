@@ -19,19 +19,10 @@ body {
 	margin-bottom: 10px;
 }
 
-.chromeframe {
-	position: relative;
-	z-index: 999999;
-	background: #181818;
-	color: #fff;
-	margin: 0;
-
-	padding: 50px;
-}
-
-.chromeframe a {
-	color: #fff !important;
-	border-bottom: 1px dotted #fff !important;
+.old_browser_warning {
+	padding: 20px 60px 30px 60px;
+	background: #eee;
+	margin-bottom: 20px;
 }
 
 h2 {
