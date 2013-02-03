@@ -18,7 +18,19 @@
 			</div>
 		</div>
 	</article>
-<?php endwhile; ?>
+<?php
+	endwhile;
+
+	if(is_search() && !have_posts()) {
+		echo "<article>";
+		echo "<h2  class=\"post-title\"><a href=\"\">Dem Pferdchen fiel kein Apfel auf den Kopf — Erfolglose Suche.</a></h2>";
+		echo "<div class=\"content\"><p><img src=\"";
+			bloginfo('template_directory');
+		echo "/img/nosearch.png\" alt=\"Pony: „Huh — I'm not finding any search result.“\" /></p></div>";
+		echo "</article>";
+		echo "<br class=\"clear\" />";
+	}
+?>
 
 <br class="clear" />
 <section id="pagination">
