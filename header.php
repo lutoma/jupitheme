@@ -42,7 +42,13 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		<!--[if lt IE 9]><p class=chromeframe><h1>Oh nein, dein Webbrowser ist veraltet!</h1> Dein Webbrowser ist veraltet! Das ist leider problematisch, weil unsere Seite nur in aktuellen Browsern korrekt angezeigt werden können – Ausserdem haben alte Browserversionen wie deine oft gravierende Sicherheitsprobleme. Bitte <a href="http://browsehappy.com/">installiere einen aktuellen Browser</a>, um diese Seite korrekt dargestellt zu sehen.</p><![endif]-->
+		<!--[if lt IE 9]>
+			<div class="old_browser_warning">
+				<h1>Oh nein, dein Webbrowser ist veraltet!</h1>
+				<div>Dein Webbrowser ist veraltet! Das ist leider problematisch, weil unsere Seite nur in aktuellen Browsern korrekt angezeigt werden kann – Ausserdem haben alte Browserversionen oft gravierende Sicherheitsprobleme. Bitte <a href="http://browsehappy.com/">installiere einen aktuellen Browser</a>, um diese Seite korrekt dargestellt zu sehen.</div>
+			</div>
+		<![endif]-->
+
 		<div id="topbar">
 			<a href="https://wiki.junge-piraten.de/wiki/<?php echo $options['wikilink']; ?>">Wiki</a>
 			<a href="https://forum.junge-piraten.de/viewboard.php?boardid=<?php echo $options['forumlink']; ?>">Forum</a>
