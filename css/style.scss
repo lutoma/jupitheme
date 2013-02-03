@@ -2,8 +2,10 @@ $sans: 'Viga', 'Source Sans Pro', 'sourcesanspro', sans-serif;
 $header: 'Open Sans Condensed', 'Open Sans', 'Opensans', sans;
 
 @import "compass/css3";
-@import "compass/utilities";
 @import "compass/css3/transform";
+@import "compass/css3/hyphenation";
+@import "compass/utilities";
+@import "compass/support";
 
 @import "lib/html5-boilerplate";
 @import "lib/wordpress";

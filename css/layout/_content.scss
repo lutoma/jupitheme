@@ -58,6 +58,8 @@
 			}
 			.content {
 				padding: 5px 17px;
+				overflow: hidden;
+				@include hyphens(auto);
 
 				> .meta {
 					padding: 8px 2px;
@@ -77,7 +79,7 @@
 			}
 		}
 	}
-	
+
 	#pagination {
 		font-size: 0;
 		margin-top: 17px;
