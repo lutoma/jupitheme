@@ -1,0 +1,194 @@
+#topbar {
+	margin: 0px auto;
+	width:  930px;
+	height: 24px;
+	font-size: 14px;
+	padding-left: 30px;
+
+	a {
+		margin-right: 10px;
+		color: #eeeeee;
+		border-bottom: none !important;
+	}
+}
+
+#headerwrapper {
+	position: relative;
+	z-index: 50;
+	width: 100%;
+
+	header {
+		position: relative;
+		height: 152px;
+		width: 960px;
+		margin: 0px auto;
+		color: #fff;
+		background: {
+			image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQIW2NkQAPy8vKSjMhiIIGHDx8+hwvCBECKwILIAmBBdAGQIACxChB8RLDalgAAAABJRU5ErkJggg==);
+			position: top left, bottom left;
+			repeat: repeat, repeat-x;
+			color: #f7931e;
+		}
+		border: {
+			left: 1px solid #888;
+			bottom: 1px solid #666;
+		}
+
+		> * {
+			margin: 0;
+			padding: 0;
+		}
+
+		#signet {
+			position: absolute;
+			z-index: 50;
+			left: 20px;
+			top: 7px;
+			height: 140px;
+		}
+
+		#name {
+			position: absolute;
+			top: 15px;
+			left: 165px;
+			margin-right: 0;
+			padding: 7px;
+			padding-right: 0;
+			border: none !important;
+			color: #fff !important;
+			line-height: 1;
+			font: {
+				size: 74px;
+				family: $header;
+				weight: lighter !important;
+			}
+			text: {
+				decoration: none !important;
+				transform: uppercase;
+				shadow: -1px 0 #F7931E, 0 1px #F7931E, 1px 0 #F7931E, 0 -1px #F7931E;
+			}
+
+			> .bold {
+				font-weight: bold;
+			}
+		}
+
+		#header-right {
+			position: absolute;
+			left: 629px;
+			top: 0px;
+			z-index: 0;
+			height: 152px;
+			width: 231px;
+			padding-left: 100px;
+			background: {
+				image: url('../img/header_ob_border.png');
+				repeat: no-repeat;
+				color: transparent;
+			}
+
+			#social {
+				position: absolute;
+				top: 5px;
+				right: 15px;
+				font-size: 20px;
+
+				a, a:hover {
+					border-bottom: none;
+					color: #f4f4f4;
+					margin-left: 5px;
+				}
+
+				.icon-twitter:hover {
+					color: #33ccff;
+				}
+				.icon-facebook:hover {
+					color: #3b5b99;
+				}
+				.icon-picture:hover {
+					color: #aaa;
+				}
+				.icon-google-plus-sign:hover {
+					color: #d84937;
+				}
+				.icon-github:hover {
+					color: #aaa;
+				}
+				.icon-flickr {
+					font-size: 25px;
+
+					&:hover {
+						span:first-child {
+							color: #0073ff;
+						}
+						span:last-child {
+							color: #ff007b;
+						}
+					}
+				}
+			}
+
+			#mitglied-werden {
+				position: absolute;
+				top: 14px;
+				left: 100px;
+				height: 0;
+				font-family: 'Dirty Headline', sans-serif;
+				border: none !important;
+				@include rotate(10deg);
+
+				&:before {
+					content: 'Werde';
+					color: #fff;
+					font-size: 30px;
+				}
+				&:after {
+					content: 'JUPI!';
+					color: #f78605;
+					display: block;
+					font-size: 45px;
+					margin: {
+						left: -7px;
+						top: -20px;
+					}
+				}
+
+				&:hover:after {
+					color: #046d8b;
+				}
+			}
+
+			#search-form {
+				position: absolute;
+				top: 115px;
+				right: 10px;
+
+				input {
+					display: block;
+					float: left;
+					border: none;
+					height: 19px;
+					padding: 4px !important;
+					margin: 0;
+					width: 220px;
+				}
+				input[type=text]:-moz-placeholder {
+					color: #aaa;
+				}
+				.submit {
+					float: right;
+					background: #2D7DC5;
+					height: 27px !important;
+					width: 27px !important;
+					color: #fff !important;
+					font-size: 14px;
+					padding: 0px;
+					padding: {
+						left: 1px;
+						top: 1px;
+					}
+				}
+			}
+		}
+	}
+}

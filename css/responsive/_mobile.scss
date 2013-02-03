@@ -1,0 +1,116 @@
+/* untouched from the original™ */
+@media screen and (max-width: 600px) {
+	aside, .plus, #slider-link, #slider, #topbar, .divisor, #signet, #header-right, #header-right-skew {
+		display: none;
+	}
+
+	#wrapper, header, header > nav, footer, footer > p, .box, article {
+		width: 100%;
+	}
+
+	header {
+		height: 240px !important;
+		min-height: 0;
+		display: block;
+	}
+
+	nav {
+		height: auto;
+	}
+
+	#headerwrapper {
+		height: auto;
+	}
+
+	#name {
+		position: absolute;
+		left: 0;
+		width: 90%;
+		text-align: center;
+		overflow: hidden;
+		font-size: 60px !important;
+		padding: 0;
+		color: #fff !important;
+	}
+
+	#name .bold {
+		background: none;
+		text-shadow: none;
+	}
+
+	#wrapper {
+		margin-top: 15px;
+	}
+
+	body > #wrapper > article {
+		width: 100%;
+		padding: 0;
+		paddin-bottom: 20px;
+		margin: 0;
+		box-shadow: none;
+		overflow: hidden;
+		padding-top: 1px;
+	}
+
+	nav {
+		left: 0;
+		padding: 0;
+	}
+
+	nav > ul {
+		margin: 0;
+		padding: 0;
+		padding-top: 5px;
+	}
+
+	nav > ul, nav > ul > li {
+		display: block;
+		clear: both;
+	}
+	nav > ul > li:after {
+		display: none;
+	}
+
+	nav > ul > li {
+		font-size: 1.3em;
+		height: 10px;
+		margin-bottom: 10px;
+		text-align: left;
+		margin-left: 10px;
+		border-bottom: 1px solid #fff;
+		height: auto;
+	}
+
+	nav > ul > li > a {
+		border-bottom: none;
+		float: none;
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
+
+	nav >  ul > .current_page_item > a, nav > ul > li > a:hover {
+		border-bottom: none !important;
+	}
+
+	body > [role="content"], #wrapper {
+		min-height: 280px;
+	}
+
+	footer, footer > p {
+		height: auto;
+		min-height: 0;
+		padding: 0;
+		margin: 0;
+	}
+
+	footer {
+		position: relative;
+		width: 100%;
+	}
+
+	footer > p {
+		width: 80%;
+		margin: 0 auto;
+		background: inherit !important;
+	}
+}

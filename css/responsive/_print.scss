@@ -1,0 +1,9 @@
+@media print {
+	header, #header-right-skew, #slider-link, #slider, aside, footer, .comment-button, #topbar, .wp-post-image, .more-link {
+		display: none;
+	}
+
+	a, a:hover {
+		border-bottom: none !important;
+	}
+}

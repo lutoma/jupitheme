@@ -1,0 +1,17 @@
+footer {
+	width: 100%;
+	background: #181619;
+	color: #ccc;
+	text-align: center;
+	font-size: 0.85em;
+	margin-top: 50px;
+	padding: {
+		top: 5px;
+		bottom: 5px;
+	}
+
+	a, a:hover, a:visited {
+		color: #ccc !important;
+		border-bottom: 1px dotted #ccc;
+	}
+}
