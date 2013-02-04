@@ -77,19 +77,18 @@
 		</header>
 		</div>
 		<div id="wrapper">
-
-		<?php if(is_home() && !is_paged() && false): ?>	
-			<a href="/2012/06/30/junge-piraten-beteiligen-sich-an-der-aktion-schlussel-nach-brussel/" id="slider-link"><div id="slider">
-				<div class="box">
-					<span class="plus">+</span>
-					<h1><span>Brüsselreise</span></h1>
-					<div class="text">Junge Piraten zu Besuch in Brüssel</div>
-				</div>
-			</div></a>
-		<?php endif; ?>
-		<aside>
-			<?php dynamic_sidebar(); ?> 
-			<a href="https://anmelden.junge-piraten.de/"><img src="<?php bloginfo('template_directory'); ?>/img/mitgliedwerden-banner.png" /></a>
-			<a href="/die-jungen-piraten/bankverbindung/"><img src="<?php bloginfo('template_directory'); ?>/img/spenden-banner.png" /></a>
-		</aside>
-
+			<?php if(is_home() && !is_paged() && false): ?>	
+				<a href="/2012/06/30/junge-piraten-beteiligen-sich-an-der-aktion-schlussel-nach-brussel/" id="slider-link"><div id="slider">
+					<div class="box">
+						<span class="plus">+</span>
+						<h1><span>Brüsselreise</span></h1>
+						<div class="text">Junge Piraten zu Besuch in Brüssel</div>
+					</div>
+				</div></a>
+			<?php endif; ?>
+			<aside>
+				<?php dynamic_sidebar(); ?> 
+				<a href="https://anmelden.junge-piraten.de/"><img src="<?php bloginfo('template_directory'); ?>/img/mitgliedwerden-banner.png" /></a>
+				<a href="/die-jungen-piraten/bankverbindung/"><img src="<?php bloginfo('template_directory'); ?>/img/spenden-banner.png" /></a>
+			</aside>
+			<section id="content-wrapper">

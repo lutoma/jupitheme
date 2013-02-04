@@ -32,7 +32,6 @@
 	}
 ?>
 
-<br class="clear" />
 <section id="pagination">
 	<?php posts_nav_link('', '<i class="icon-circle-arrow-left"></i> vorherige Seite', 'nächste Seite <i class="icon-circle-arrow-right"></i>'); ?>
 </section>
