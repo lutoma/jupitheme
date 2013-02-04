@@ -20,7 +20,8 @@ nav {
 		position: relative;
 		display: inline-table;
 
-		.divisor {
+		&:after {
+			content: '//';
 			margin: {
 				left: 10px;
 				right: 10px;
@@ -30,7 +31,8 @@ nav {
 				size: 17px;
 			}
 		}
-		&:first-child > .divisor {
+		&:last-child:after {
+			content: '';
 			display: none;
 		}
 		a {
@@ -48,6 +50,7 @@ nav {
 		.sub-menu {
 			display: none;
 			position: absolute;
+			left: -30px;
 			clear: both;
 			background: #fff;
 			margin-top: 7px;
@@ -59,6 +62,7 @@ nav {
 				content: "\f0d8";
 				position: absolute;
 				top: -11px;
+				left: 10px;
 				padding: 0 60px 0 60px;
 			}
 			li {
@@ -67,9 +71,6 @@ nav {
 				clear: both;
 				line-height: auto;
 
-				.divisor {
-					display: none;
-				}
 				a {
 					display: block;
 					width: 135px;
@@ -87,6 +88,7 @@ nav {
 					display: none;
 					position: absolute;
 					z-index: 999999;
+					left: auto;
 					right: -140px;
 					top: 5px;
 
