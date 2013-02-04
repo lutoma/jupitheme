@@ -1,4 +1,7 @@
-#wrapper {
+#wrapper > #content-wrapper {
+	float: left;
+	width: 750px;
+
 	#slider {
 		float: left;
 		position: relative;
@@ -27,10 +30,8 @@
 			}
 		}	
 	}
-
 	article {
-		float: left;
-		width: 750px;
+		width: 100%;
 		background: #fff;
 		padding: 1px;
 		margin-top: 20px;
@@ -59,7 +60,7 @@
 		}
 
 		.content {
-			padding: 5px 17px;
+			padding: 17px;
 			overflow: hidden;
 			@include hyphens(auto);
 
@@ -80,28 +81,15 @@
 			}
 		}
 	}
-
 	#pagination {
 		font-size: 0;
 		margin-top: 17px;
-		width: 750px;
 		overflow: hidden;
 
 		a {
-			display: block;
-			padding: 7px;
-			font-size: 14px;
-			color: #000;
-			background: #fff;
-			@include box-shadow(0 0 3px #888);
-
-			&:hover {
-				border-bottom: 0;
-				color: #046d8b;
-			}
-			&:active {
-				color: #262f3a;
-			}
+			@include btn;
+			@include btn-white;
+			
 			&:first-child {
 				float: left;
 			}
