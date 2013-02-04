@@ -1,116 +1,126 @@
-/* untouched from the original™ */
 @media screen and (max-width: 600px) {
 	aside, .plus, #slider-link, #slider, #topbar, .divisor, #signet, #header-right, #header-right-skew {
 		display: none;
 	}
 
-	#wrapper, header, header > nav, footer, footer > p, .box, article {
-		width: 100%;
-	}
-
-	header {
-		height: 240px !important;
-		min-height: 0;
-		display: block;
-	}
-
-	nav {
-		height: auto;
+	#wrapper, header, header > nav, footer, footer > p, .box, #content-wrapper {
+		width: 100% !important;
 	}
 
 	#headerwrapper {
-		height: auto;
-	}
+		display: block;
+		height: auto !important;
+		width: 100%;
 
-	#name {
-		position: absolute;
-		left: 0;
-		width: 90%;
-		text-align: center;
-		overflow: hidden;
-		font-size: 60px !important;
-		padding: 0;
-		color: #fff !important;
-	}
+		header {
+			display: block;
+			height: auto !important;
+			overflow: hidden;
 
-	#name .bold {
-		background: none;
-		text-shadow: none;
+			#name {
+				position: absolute;
+				left: 0 !important;
+				right: 0;
+				padding: 0;
+				font-size: 40px !important;
+				text-align: center;
+				color: #fff !important;
+			}
+			nav {
+				height: auto;
+				margin-top: 80px !important;
+				background: #242424;
+				font-size: 16px;
+
+				* {
+					display: block !important;
+					position: relative !important;
+				}
+				> ul > li > a {
+					color: #fff;
+					margin-left: 5px;
+				}
+				ul {
+					padding-bottom: 5px;
+
+					li {
+						a {
+							border: none;
+							padding: 6px;
+							padding-bottom: 0;
+						}
+						&.current-menu-item > a:after {
+							content: "\f060";
+							color: #fff;
+							margin-left: 15px;
+							font: {
+								family: FontAwesome;
+								size: 12px;
+							}
+						}
+						.sub-menu {
+							background: #fff;
+							margin: {
+								top: 7px;
+								right: 13px;
+								bottom: 0;
+								left: 10px;
+							}
+
+							&:before {
+								content: "\f0d8";
+								position: absolute;
+								top: -13px;
+								left: 25px;
+								font-family: FontAwesome;
+								color: #fff;
+							}
+							li.current-menu-item > a:after {
+								color: #000;
+							}
+							.sub-menu {
+								border-left: 5px black solid;
+								padding-left: 7px;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 	#wrapper {
-		margin-top: 15px;
-	}
-
-	body > #wrapper > article {
-		width: 100%;
-		padding: 0;
-		paddin-bottom: 20px;
-		margin: 0;
-		box-shadow: none;
-		overflow: hidden;
-		padding-top: 1px;
-	}
-
-	nav {
-		left: 0;
-		padding: 0;
-	}
-
-	nav > ul {
-		margin: 0;
-		padding: 0;
-		padding-top: 5px;
-	}
-
-	nav > ul, nav > ul > li {
-		display: block;
-		clear: both;
-	}
-	nav > ul > li:after {
-		display: none;
-	}
-
-	nav > ul > li {
-		font-size: 1.3em;
-		height: 10px;
-		margin-bottom: 10px;
-		text-align: left;
-		margin-left: 10px;
-		border-bottom: 1px solid #fff;
-		height: auto;
-	}
-
-	nav > ul > li > a {
-		border-bottom: none;
-		float: none;
-		padding-top: 7px;
-		padding-bottom: 7px;
-	}
-
-	nav >  ul > .current_page_item > a, nav > ul > li > a:hover {
-		border-bottom: none !important;
-	}
-
-	body > [role="content"], #wrapper {
-		min-height: 280px;
-	}
-
-	footer, footer > p {
-		height: auto;
-		min-height: 0;
-		padding: 0;
-		margin: 0;
+		> article {
+			box-shadow: none;
+			overflow: hidden;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			padding: {
+				top: 1px;
+				bottom: 20px;
+			}
+		}
+		#pagination {
+			padding: 18px;
+			padding-top: 0;
+		}
 	}
 
 	footer {
 		position: relative;
 		width: 100%;
-	}
 
-	footer > p {
-		width: 80%;
-		margin: 0 auto;
-		background: inherit !important;
+		p {
+			width: 80%;
+			margin: 0 auto;
+			background: inherit !important;
+		}
+	}
+	footer, footer > p {
+		height: auto;
+		min-height: 0;
+		padding: 0;
+		margin: 0;
 	}
 }
