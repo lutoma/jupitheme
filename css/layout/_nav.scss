@@ -20,6 +20,17 @@ nav {
 		position: relative;
 		display: inline-table;
 
+		a {
+			display: inline;
+			border: 0 solid #fff !important;
+			color: #fff !important;
+			border-radius: 1px;
+			font-size: 15px;
+			padding-bottom: 2px;
+		}
+		&.current_page_item > a, a:hover {
+			border-bottom: 1px solid #ccc !important;
+		}
 		&:after {
 			content: '//';
 			margin: {
@@ -35,18 +46,9 @@ nav {
 			content: '';
 			display: none;
 		}
-		a {
-			display: inline;
-			border: 0 solid #fff !important;
-			color: #fff !important;
-			border-radius: 1px;
-			font-size: 15px;
-			padding-bottom: 2px;
+		&:hover > .sub-menu {
+			display: block;
 		}
-		&.current_page_item > a, a:hover {
-			border-bottom: 1px solid #ccc !important;
-		}
-
 		.sub-menu {
 			display: none;
 			position: absolute;
