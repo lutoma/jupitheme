@@ -34,8 +34,9 @@
 			</style>
 		<?php endif; ?>
 
-		<!--[if ie]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
 		<!--[if lt IE 9]>
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+			<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/ie.css" />
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 

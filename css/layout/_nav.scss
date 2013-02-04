@@ -1,4 +1,4 @@
-@media screen and (min-width: 601px) {
+@mixin nav {
 	nav {
 		position: absolute;
 		left: 145px;
@@ -105,4 +105,7 @@
 			}
 		}
 	}
+}
+@media screen and (min-width: 601px) {
+	@include nav;
 }

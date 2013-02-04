@@ -11,3 +11,5 @@ How-To install
 How-To build
 ------------
 Just a simple `scss --style compressed --compass style.scss style.css` inside `css/` and you're done!
+
+… almost. Because the Internet Explorer is a peace of fuck, you have to run `scss --style compressed --compass ie.scss ie.css`, again in `css/`, too.
