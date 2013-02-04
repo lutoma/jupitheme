@@ -88,20 +88,9 @@
 		overflow: hidden;
 
 		a {
-			display: block;
-			padding: 7px;
-			font-size: 14px;
-			color: #000;
-			background: #fff;
-			@include box-shadow(0 0 3px #888);
-
-			&:hover {
-				border-bottom: 0;
-				color: #046d8b;
-			}
-			&:active {
-				color: #262f3a;
-			}
+			@include btn;
+			@include btn-white;
+			
 			&:first-child {
 				float: left;
 			}
