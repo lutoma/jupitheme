@@ -13,7 +13,7 @@
 				<?php endif; ?>
 				<?php the_content(); ?>
 			
-				<?php if(!is_single() && !is_page()) comments_popup_link('Kommentieren', '1 Kommentar', '% Kommentare', 'comment-button btn'); ?>
+				<?php if(!is_single() && !is_page()) comments_popup_link('<i class="icon-plus-sign"></i> kommentieren', '<i class="icon-comment"></i> 1 Kommentar', '<i class="icon-comments"></i> % Kommentare', 'comment-button btn'); ?>
 				<?php if(is_single() && !is_page()) { comments_template(); } ?>
 			</div>
 		</div>
