@@ -58,9 +58,11 @@ input[type=text], input[type=password], textarea {
 @mixin btn {
 	border: none;
 	cursor: pointer;
-	background: #000 !important;
+	background: $jupis-gray !important;
 	color: #fff !important;
 	font-size: 14px;
+	@include border-radius(2px);
+
 	padding: {
 		top: 3px;
 		left: 10px;
@@ -69,7 +71,8 @@ input[type=text], input[type=password], textarea {
 	}
 
 	&:hover {
-		color: $jupis-gray !important;
+		background: $jupis-pink !important;
+		color: #fff !important;
 		border: none;
 	}
 }
