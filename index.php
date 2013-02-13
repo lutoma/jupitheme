@@ -3,7 +3,7 @@
 <?php while (have_posts()) : the_post() ?>
 	<article>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+			<a href="<?php the_permalink(); ?>" class="post_image_link"><span class="copy"><?php echo get_post_custom_values("Headerbild-Copyright"); ?></span><?php the_post_thumbnail(); ?></a>
 			<h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 			<div class="content">
 				<?php if(!is_page()): ?>
