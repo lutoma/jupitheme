@@ -73,7 +73,7 @@
 			@include border-top-left-radius(1px);
 			@include border-top-right-radius(1px);
 			font: {
-				family: $sans;
+				family: $header-font;
 				size: 1.6em;
 			}
 

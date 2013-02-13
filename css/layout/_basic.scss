@@ -2,7 +2,7 @@ body {
 	background: url(../img/main_bg.png) $jupis-blue;
 	width: 100%;
 	color: $jupis-gray;
-	font-family: 'Source Sans Pro', 'sourcesanspro', sans-serif;
+	font-family: $sans;
 	font-size: 17px;
 	line-height: 1.6;
 	@include hyphens(auto);
@@ -35,7 +35,7 @@ h2 {
 
 h1, h2, h3, h4, h5, h6 {
 	color: #2B2926;
-	font-family: 'Viga', 'Source Sans Pro', 'sourcesanspro', sans-serif;
+	font-family: $header-font;
 	font-weight: 400;
 }
 
@@ -47,6 +47,10 @@ a, a:hover, a:visited {
 a:hover {
 	color: #2B2926;
 	border-bottom: 1px dotted #2B2926;
+}
+
+input, textarea, button {
+	font-family:
 }
 
 input[type=text], input[type=password], textarea {
