@@ -41,8 +41,12 @@
 		.post_image_link {
 			display: block;
 			overflow: hidden;
-			height: 120px;
 			position: relative;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: none;
+			}
 
 			.copy {
 				position: absolute;
