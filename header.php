@@ -58,7 +58,7 @@
 		<div id="headerwrapper">
 		<header>
 			<a id="name" href="<?php echo site_url("/"); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php if(isset($options['title']) && $options['title'] != '') { echo $options['title']; } else { ?>Junge <span class="bold">PIRATEN</span><?php } ?></a>
-			<img id="signet" src="<?php bloginfo('template_directory'); ?>/img/signet.svg" />
+			<a href="<?php echo site_url("/"); ?>" title="Signet" rel="home"><img id="signet" src="<?php bloginfo('template_directory'); ?>/img/signet.svg" /></a>
 
 			<?php function menu_empty() {}; wp_nav_menu(array('container' => 'nav', 'container_class' => '', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '')); ?>
 			<div id="header-right">
