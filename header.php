@@ -89,7 +89,5 @@
 			<?php endif; ?>
 			<aside>
 				<?php dynamic_sidebar(); ?> 
-				<a href="https://anmelden.junge-piraten.de/"><img src="<?php bloginfo('template_directory'); ?>/img/mitgliedwerden-banner.png" /></a>
-				<a href="/die-jungen-piraten/bankverbindung/"><img src="<?php bloginfo('template_directory'); ?>/img/spenden-banner.png" /></a>
 			</aside>
 			<section id="content-wrapper">
