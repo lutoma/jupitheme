@@ -1,5 +1,5 @@
 body {
-	background: url(../img/main_bg.png) $jupis-blue;
+	background: url(../img/wk_bg.png) $jupis-blue;
 	width: 100%;
 	color: $jupis-gray;
 	font-family: $sans;
@@ -7,6 +7,11 @@ body {
 	line-height: 1.6;
 	@include hyphens(auto);
 	-webkit-font-smoothing: antialiased;
+
+	background: {
+		size: 100% 700px;
+		attachment: fixed;
+	}
 }
 
 * {
