@@ -50,11 +50,6 @@
 			</div>
 		<![endif]-->
 
-		<div id="topbar">
-			<a href="https://wiki.junge-piraten.de/wiki/<?php echo $options['wikilink']; ?>">Wiki</a>
-			<a href="https://forum.junge-piraten.de/viewboard.php?boardid=<?php echo $options['forumlink']; ?>">Forum</a>
-			<a href="https://ucp.junge-piraten.de/">UCP</a>
-		</div>
 		<div id="headerwrapper">
 		<header>
 			<a id="name" href="<?php echo site_url("/"); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php if(isset($options['title']) && $options['title'] != '') { echo $options['title']; } else { ?>Junge <span class="bold">PIRATEN</span><?php } ?></a>
