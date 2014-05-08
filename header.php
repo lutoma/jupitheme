@@ -50,26 +50,43 @@
 			</div>
 		<![endif]-->
 
-		<div id="nav-wrapper">
-			<nav class='menu-pages-container'>
-				<?php function menu_empty() {}; wp_nav_menu(array('container' => 'false', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '')); ?>
-				<div id="social" style="color: #fff;    float: right;">
-					<a class="icon-twitter" href="https://twitter.com/#!/jungePiraten" title="Twitter"></a>
-					<a class="icon-facebook" href="https://facebook.com/jungePiraten" title="facebook"></a>
-					<a class="icon-flickr" href="http://flickr.com/photos/jungePiraten" title="flickr"><span>•</span><span>•</span></a>
-					<a class="icon-google-plus-sign" href="https://plus.google.com/111687817103191810370" title="googleplus"></a>
-					<a class="icon-github" href="https://github.com/jungePiraten" title="github"></a>
-				</div>
-			</nav>
+		<div id="topbar">
+			<a href="https://wiki.junge-piraten.de/wiki/<?php echo $options['wikilink']; ?>">Wiki</a>
+			<a href="https://forum.junge-piraten.de/viewboard.php?boardid=<?php echo $options['forumlink']; ?>">Forum</a>
+			<a href="https://ucp.junge-piraten.de/">UCP</a>
 		</div>
-
 		<div id="headerwrapper">
 		<header>
-			<a id="name" href="<?php echo site_url("/"); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php if(isset($options['title']) && $options['title'] != '') { echo $options['title']; } else { ?>Junge PIRATEN<?php } ?></a>
+			<a id="name" href="<?php echo site_url("/"); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php if(isset($options['title']) && $options['title'] != '') { echo $options['title']; } else { ?>Junge <span class="bold">PIRATEN</span><?php } ?></a>
 			<img id="signet" src="<?php bloginfo('template_directory'); ?>/img/signet.svg" />
+
+			<?php function menu_empty() {}; wp_nav_menu(array('container' => 'nav', 'container_class' => '', 'theme_location' => 'primary', 'fallback_cb' => menu_empty, 'link_before' => '')); ?>
+			<div id="header-right">
+				<div id="social">
+					<?php if(!empty($options['twitter'])) { ?><a class="icon-twitter" href="https://twitter.com/#!/<?php echo $options['twitter']; ?>" title="Twitter"></a><?php } ?>
+					<?php if(!empty($options['facebook'])) { ?><a class="icon-facebook" href="https://facebook.com/<?php echo $options['facebook']; ?>" title="facebook"></a><?php } ?>
+					<?php if(!empty($options['flickr'])) { ?><a class="icon-flickr" href="http://flickr.com/photos/<?php echo $options['flickr']; ?>" title="flickr"><span>•</span><span>•</span></a><?php } ?>
+					<?php if(!empty($options['googleplus'])) { ?><a class="icon-google-plus-sign" href="https://plus.google.com/<?php echo $options['googleplus']; ?>" title="googleplus"></a><?php } ?>
+					<?php if(!empty($options['github'])) { ?><a class="icon-github" href="https://github.com/<?php echo $options['github']; ?>" title="github"></a><?php } ?>
+				</div>
+				<a id="mitglied-werden" href="https://anmelden.junge-piraten.de/"></a>
+				<form action="<?php echo site_url("/"); ?>" method="get" id="search-form">
+						<input type="text" placeholder="Suchbegriff" name="s" />
+						<button class="submit" type="submit"><i class="icon-search"></i></button>
+				</form>
+			</div>
 		</header>
 		</div>
 		<div id="wrapper">
+			<?php if(is_home() && !is_paged() && false): ?>	
+				<a href="/2012/06/30/junge-piraten-beteiligen-sich-an-der-aktion-schlussel-nach-brussel/" id="slider-link"><div id="slider">
+					<div class="box">
+						<span class="plus">+</span>
+						<h1><span>Brüsselreise</span></h1>
+						<div class="text">Junge Piraten zu Besuch in Brüssel</div>
+					</div>
+				</div></a>
+			<?php endif; ?>
 			<aside>
 				<?php dynamic_sidebar(); ?> 
 			</aside>

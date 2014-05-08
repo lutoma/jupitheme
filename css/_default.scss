@@ -1,6 +1,6 @@
 $sans: 'Source Sans Pro', 'sourcesanspro', sans-serif;
-$header-font: 'PoliticsHeadBold', 'Source Sans Pro', 'sourcesanspro', sans-serif;
-$tagline-font: 'PoliticsHeadBold', 'Source Sans Pro', 'sourcesanspro', sans-serif;
+$header-font: 'Viga', 'Source Sans Pro', 'sourcesanspro', sans-serif;
+$tagline-font: 'Open Sans Condensed', 'Open Sans', 'Opensans', sans;
 
 $jupis-orange: #f7931e;
 $jupis-gray: #242424;
@@ -12,10 +12,3 @@ $jupis-pink: #de2355;
 @import "compass/css3/hyphenation";
 @import "compass/utilities";
 @import "compass/support";
-
-@font-face {
-	font-family: 'PoliticsHeadBold';
-	font-style: normal;
-	font-weight: normal;
-	src: local('☺'), local('PoliticsHeadBold'), url('../font/PoliticsHeadBold.woff') format('woff');
-}
